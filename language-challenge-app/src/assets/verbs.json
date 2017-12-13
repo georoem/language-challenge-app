@@ -1,0 +1,554 @@
+[
+    {
+        "word": "accept",
+        "wordTranslate": "aceptar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "allow",
+        "wordTranslate": "permitir/dejar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "ask",
+        "wordTranslate": "preguntar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "believe",
+        "wordTranslate": "creer", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "borrow",
+        "wordTranslate": "prestar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "break",
+        "wordTranslate": "romper", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "bring",
+        "wordTranslate": "traer", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "buy",
+        "wordTranslate": "comprar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "can/be able",
+        "wordTranslate": "poder", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "cancel",
+        "wordTranslate": "cancelar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "change",
+        "wordTranslate": "cambiar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "clean",
+        "wordTranslate": "limpiar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "comb",
+        "wordTranslate": "peinar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "complain",
+        "wordTranslate": "quejarse", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "cough",
+        "wordTranslate": "toser", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "count",
+        "wordTranslate": "contar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "cut",
+        "wordTranslate": "cortar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "dance",
+        "wordTranslate": "bailar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "draw",
+        "wordTranslate": "dibujar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "drink",
+        "wordTranslate": "beber", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "drive",
+        "wordTranslate": "conducir", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "eat",
+        "wordTranslate": "comer", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "explain",
+        "wordTranslate": "explicar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "fall",
+        "wordTranslate": "caerse", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "fill",
+        "wordTranslate": "llenar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "find",
+        "wordTranslate": "encontrar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "finish",
+        "wordTranslate": "terminar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "fit",
+        "wordTranslate": "caber", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "fix",
+        "wordTranslate": "reparar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "fly",
+        "wordTranslate": "volar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "forget",
+        "wordTranslate": "olvidar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "give",
+        "wordTranslate": "dar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "go",
+        "wordTranslate": "ir", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "have",
+        "wordTranslate": "tener", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "hear",
+        "wordTranslate": "oir", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "hurt",
+        "wordTranslate": "dañar, herir", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "know",
+        "wordTranslate": "saber/conocer", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "learn",
+        "wordTranslate": "aprender", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "leave",
+        "wordTranslate": "salir/marcharse", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "listen",
+        "wordTranslate": "escuchar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "live",
+        "wordTranslate": "vivir", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "look",
+        "wordTranslate": "mirar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "lose",
+        "wordTranslate": "perder", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "make/do",
+        "wordTranslate": "hacer", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "need",
+        "wordTranslate": "necesitar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "open",
+        "wordTranslate": "abrir", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "close/shut",
+        "wordTranslate": "cerrar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "organize",
+        "wordTranslate": "organizar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "pay",
+        "wordTranslate": "pagar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "play",
+        "wordTranslate": "jugar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "put",
+        "wordTranslate": "poner", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "rain",
+        "wordTranslate": "llover", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "read",
+        "wordTranslate": "leer", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "reply",
+        "wordTranslate": "responder", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "run",
+        "wordTranslate": "correr", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "say",
+        "wordTranslate": "decir", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "see",
+        "wordTranslate": "ver", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "sell",
+        "wordTranslate": "vender", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "send",
+        "wordTranslate": "enviar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "sign",
+        "wordTranslate": "firmar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "sing",
+        "wordTranslate": "cantar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "sit",
+        "wordTranslate": "sentarse", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "sleep",
+        "wordTranslate": "dormir", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "smoke",
+        "wordTranslate": "fumar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "speak",
+        "wordTranslate": "hablar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "spell",
+        "wordTranslate": "deletrear", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "spend",
+        "wordTranslate": "gastar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "stand",
+        "wordTranslate": "ponerse de pie", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "start/begin",
+        "wordTranslate": "comenzar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "study",
+        "wordTranslate": "estudiar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "succeed",
+        "wordTranslate": "tener exito", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "swim",
+        "wordTranslate": "nadar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "take",
+        "wordTranslate": "tomar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "talk",
+        "wordTranslate": "hablar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "teach",
+        "wordTranslate": "enseñar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "tell",
+        "wordTranslate": "decir", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "think",
+        "wordTranslate": "pensar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "wordTranslate",
+        "wordTranslate": "traducir", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "travel",
+        "wordTranslate": "viajar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "try",
+        "wordTranslate": "intentar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "turn off",
+        "wordTranslate": "apagar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "turn on",
+        "wordTranslate": "encender", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "type",
+        "wordTranslate": "escribir a maquina", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "understand",
+        "wordTranslate": "entender", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "use",
+        "wordTranslate": "utilizar/usar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "wait",
+        "wordTranslate": "esperar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "wake up",
+        "wordTranslate": "despertar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "want",
+        "wordTranslate": "querer/desear", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "watch",
+        "wordTranslate": "mirar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "work",
+        "wordTranslate": "trabajar", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "worry",
+        "wordTranslate": "preocuparse", 
+		"wordType": "verb",  
+		"level": "all"
+    },
+    {
+        "word": "write",
+        "wordTranslate": "escribir", 
+		"wordType": "verb",  
+		"level": "all"
+    }
+]

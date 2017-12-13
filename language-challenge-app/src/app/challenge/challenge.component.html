@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Build the sentence and pronounce it</mat-card-title>
+    </mat-card-header>
+    <div class="card-body text-center">
+        <mat-card *ngIf="challengeState == CHALLENGE_STATE.FINALIZED">
+            <mat-card-title><mat-icon>stars</mat-icon> Your Score</mat-card-title>
+            <h2 class="text-primary">{{scoreFormatted}}</h2>&nbsp;
+        </mat-card>
+        <app-word-palette [hidden]="challengeState == CHALLENGE_STATE.UNSTARTED || challengeState == CHALLENGE_STATE.FINALIZED" [wordTypes]="selectedOrderWords" [level] = "level"></app-word-palette>
+        <br>
+        <app-chronometer></app-chronometer>
+        <mat-card *ngIf="challengeState == CHALLENGE_STATE.UNSTARTED">
+            <mat-card-title><mat-icon>trending_up</mat-icon> Select level</mat-card-title>
+            <mat-radio-group *ngFor = 'let option of optionLevels' [(ngModel)]="level">
+                <mat-radio-button [value] = 'option'>&nbsp;{{option}}</mat-radio-button>
+            </mat-radio-group>
+        </mat-card>
+        <br>
+        <button mat-fab color="accent" *ngIf="challengeState == CHALLENGE_STATE.UNSTARTED" (keyup.enter)= "startChallenge()" (click) = "startChallenge()" title="Start">Start</button>
+        <button mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.STARTED" (keyup.enter)= "nextChallenge()" (click) = "nextChallenge()" title="Next"><mat-icon aria-label="Next">navigate_next</mat-icon></button>
+        <button mat-fab color="warn" *ngIf="challengeState == CHALLENGE_STATE.TO_FINALIZE" (keyup.enter)= "endChallenge()" (click) = "endChallenge()" title="Finish">Finish</button>
+        <button mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.FINALIZED" (click) = "restartChallenge()" title="Challenge Again"><mat-icon aria-label="Challenge Again">restore</mat-icon></button>
+        <button mat-fab color="warn" *ngIf="challengeState == CHALLENGE_STATE.FINALIZED" (click) = "openSaveScore()" title="Save Score"><mat-icon aria-label="Save Score">save</mat-icon></button>
+        <br>
+        <br>
+        <div>
+            <button mat-button *ngIf="challengeState == CHALLENGE_STATE.UNSTARTED || challengeState == CHALLENGE_STATE.FINALIZED" (click) = "openScore()" title="See Results">See Results</button>
+        </div>
+    </div>
+</mat-card>

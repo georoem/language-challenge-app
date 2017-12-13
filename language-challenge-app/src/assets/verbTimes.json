@@ -1,0 +1,104 @@
+[
+	{
+		"word": "past simple",
+		"wordTranslate": "pasado simple", 
+		"wordType": "verbTime",  
+		"level": "A1,a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "past continuous",
+		"wordTranslate": "pasado continuo", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "past perfect",
+		"wordTranslate": "pasado perfecto", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "past perfect continuous",
+		"wordTranslate": "pasado perfecto continuo", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "conditional perfect",
+		"wordTranslate": "condicional perfecto", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "conditional continuous perfect",
+		"wordTranslate": "condicional perfecto continuo", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "present simple",
+		"wordTranslate": "presente simple", 
+		"wordType": "verbTime",  
+		"level": "A1,a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "present continuous",
+		"wordTranslate": "presente continuo", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "present perfect",
+		"wordTranslate": "presente perfecto", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "present perfect continuous",
+		"wordTranslate": "presente perfecto continuo", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "conditional simple",
+		"wordTranslate": "condicional simple", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "conditional continuo",
+		"wordTranslate": "condicional continuo", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "future simple",
+		"wordTranslate": "futuro simple", 
+		"wordType": "verbTime",  
+		"level": "A1,a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "future continuous",
+		"wordTranslate": "futuro continuo", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "future perfect",
+		"wordTranslate": "futuro perfecto", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "future perfect continuous",
+		"wordTranslate": "futuro perfecto continuo", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	},
+	{
+		"word": "future going to",
+		"wordTranslate": "futuro going to", 
+		"wordType": "verbTime",  
+		"level": "a2,b1,b2,c1,c2"
+	}
+]

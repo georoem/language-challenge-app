@@ -1,0 +1,1202 @@
+[
+    {
+        "word": "action",
+        "wordTranslate": "acción", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "age",
+        "wordTranslate": "edad", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "air",
+        "wordTranslate": "aire", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "animal",
+        "wordTranslate": "animal", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "answer",
+        "wordTranslate": "respuesta", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "apple",
+        "wordTranslate": "manzana", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "art",
+        "wordTranslate": "arte", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "baby",
+        "wordTranslate": "bebé", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "back",
+        "wordTranslate": "espalda", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "ball",
+        "wordTranslate": "bola, pelota", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "bank",
+        "wordTranslate": "banco", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "bed",
+        "wordTranslate": "cama", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "bill",
+        "wordTranslate": "factura", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "bird",
+        "wordTranslate": "pájaro", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "blood",
+        "wordTranslate": "sangre", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "boat",
+        "wordTranslate": "barco", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "body",
+        "wordTranslate": "cuerpo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "bone",
+        "wordTranslate": "hueso", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "book",
+        "wordTranslate": "libro", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "bottom",
+        "wordTranslate": "fondo, parte bajo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "box",
+        "wordTranslate": "caja", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "boy",
+        "wordTranslate": "niño (masculino)", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "brother",
+        "wordTranslate": "hermano", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "building",
+        "wordTranslate": "edificio", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "business",
+        "wordTranslate": "negocio", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "call",
+        "wordTranslate": "llamada", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "capital",
+        "wordTranslate": "capital", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "case",
+        "wordTranslate": "caso, estuche", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "cat",
+        "wordTranslate": "gato", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "cause",
+        "wordTranslate": "causa", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "cent",
+        "wordTranslate": "céntimo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "center",
+        "wordTranslate": "centro", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "century",
+        "wordTranslate": "siglo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "chance",
+        "wordTranslate": "oportunidad", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "change",
+        "wordTranslate": "cambio", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "check",
+        "wordTranslate": "cheque", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "child (pl children)",
+        "wordTranslate": "niño", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "church",
+        "wordTranslate": "iglesia", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "circle",
+        "wordTranslate": "círculo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "city",
+        "wordTranslate": "ciudad", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "class",
+        "wordTranslate": "clase, curso", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "clothes",
+        "wordTranslate": "ropa", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "cloud",
+        "wordTranslate": "nube", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "coast",
+        "wordTranslate": "costa", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "color",
+        "wordTranslate": "color", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "company",
+        "wordTranslate": "empresa", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "consonant",
+        "wordTranslate": "consonante", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "copy",
+        "wordTranslate": "copia", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "corn",
+        "wordTranslate": "maíz", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "cotton",
+        "wordTranslate": "algodón", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "country",
+        "wordTranslate": "país, campo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "course",
+        "wordTranslate": "curso", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "cow",
+        "wordTranslate": "vaca", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "crowd",
+        "wordTranslate": "multitud", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "day",
+        "wordTranslate": "día", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "dictionary",
+        "wordTranslate": "diccionario", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "direction",
+        "wordTranslate": "dirección", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "distance",
+        "wordTranslate": "distancia", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "doctor",
+        "wordTranslate": "médico", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "dollar",
+        "wordTranslate": "dólar", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "door",
+        "wordTranslate": "puerta", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "ear",
+        "wordTranslate": "oreja", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "earth",
+        "wordTranslate": "tierra", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "egg",
+        "wordTranslate": "huevo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "energy",
+        "wordTranslate": "energía", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "example",
+        "wordTranslate": "ejemplo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "experience",
+        "wordTranslate": "experiencia", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "eye",
+        "wordTranslate": "ojo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "game",
+        "wordTranslate": "juego, partido", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "garden",
+        "wordTranslate": "jardín", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "gas",
+        "wordTranslate": "carburante", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "girl",
+        "wordTranslate": "chica, niña", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "glass",
+        "wordTranslate": "vidrio, vaso", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "gold",
+        "wordTranslate": "oro", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "government",
+        "wordTranslate": "gobierno", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "grass",
+        "wordTranslate": "hierba, césped", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "group",
+        "wordTranslate": "grupo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "hair",
+        "wordTranslate": "pelo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "hand",
+        "wordTranslate": "mano", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "hat",
+        "wordTranslate": "sombrero", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "head",
+        "wordTranslate": "cabeza", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "heart",
+        "wordTranslate": "corazón", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "heat",
+        "wordTranslate": "calor, calefacción", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "history",
+        "wordTranslate": "historia", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "hole",
+        "wordTranslate": "agujero, hueco", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "home",
+        "wordTranslate": "casa, hogar", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "horse",
+        "wordTranslate": "caballo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "hour",
+        "wordTranslate": "hora", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "house",
+        "wordTranslate": "casa", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "ice",
+        "wordTranslate": "hielo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "idea",
+        "wordTranslate": "idea", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "inch",
+        "wordTranslate": "pulgada", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "industry",
+        "wordTranslate": "industria", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "information",
+        "wordTranslate": "información", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "insect",
+        "wordTranslate": "insecto", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "interest",
+        "wordTranslate": "interés", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "iron",
+        "wordTranslate": "hierro, plancha", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "island",
+        "wordTranslate": "isla", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "job",
+        "wordTranslate": "puesto de trabajo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "key",
+        "wordTranslate": "llave", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "lake",
+        "wordTranslate": "lago", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "land",
+        "wordTranslate": "tierra", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "language",
+        "wordTranslate": "idioma", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "law",
+        "wordTranslate": "ley", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "leg",
+        "wordTranslate": "pierna", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "level",
+        "wordTranslate": "nivel", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "lie",
+        "wordTranslate": "mentira", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "life",
+        "wordTranslate": "vida", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "light",
+        "wordTranslate": "luz", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "line",
+        "wordTranslate": "línea", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "list",
+        "wordTranslate": "lista", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "machine",
+        "wordTranslate": "máquina", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "man (pl men)",
+        "wordTranslate": "hombre", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "map",
+        "wordTranslate": "mapa", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "material",
+        "wordTranslate": "material", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "meat",
+        "wordTranslate": "carne", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "middle",
+        "wordTranslate": "medio", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "mile",
+        "wordTranslate": "milla", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "milk",
+        "wordTranslate": "leche", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "mind",
+        "wordTranslate": "mente", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "minute",
+        "wordTranslate": "minuto", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "money",
+        "wordTranslate": "dinero", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "month",
+        "wordTranslate": "mes", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "moon",
+        "wordTranslate": "luna", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "mouth",
+        "wordTranslate": "boca", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "music",
+        "wordTranslate": "música", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "nation",
+        "wordTranslate": "nación", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "night",
+        "wordTranslate": "noche", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "nose",
+        "wordTranslate": "nariz", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "note",
+        "wordTranslate": "nota", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "number",
+        "wordTranslate": "número", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "object",
+        "wordTranslate": "objeto", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "ocean",
+        "wordTranslate": "océano", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "office",
+        "wordTranslate": "oficina", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "oil",
+        "wordTranslate": "aceite, petróleo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "page",
+        "wordTranslate": "página", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "pair",
+        "wordTranslate": "par", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "paper",
+        "wordTranslate": "papel", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "paragraph",
+        "wordTranslate": "párrafo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "park",
+        "wordTranslate": "parque", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "part",
+        "wordTranslate": "parte", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "party",
+        "wordTranslate": "fiesta, partido", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "past",
+        "wordTranslate": "pasado", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "person (pl people)",
+        "wordTranslate": "persona, gente", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "pound",
+        "wordTranslate": "libra", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "president",
+        "wordTranslate": "presidente", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "problem",
+        "wordTranslate": "problema", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "product",
+        "wordTranslate": "producto", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "property",
+        "wordTranslate": "propiedad", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "question",
+        "wordTranslate": "pregunta", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "race",
+        "wordTranslate": "carrera", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "radio",
+        "wordTranslate": "radio", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "rain",
+        "wordTranslate": "lluvia", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "reason",
+        "wordTranslate": "razón", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "record",
+        "wordTranslate": "récord", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "region",
+        "wordTranslate": "región", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "ring",
+        "wordTranslate": "anillo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "river",
+        "wordTranslate": "río", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "road",
+        "wordTranslate": "camino", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "rock",
+        "wordTranslate": "roca", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "row",
+        "wordTranslate": "fila", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "rule",
+        "wordTranslate": "regla", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "sand",
+        "wordTranslate": "arena", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "school",
+        "wordTranslate": "escuela", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "science",
+        "wordTranslate": "ciencia", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "sea",
+        "wordTranslate": "mar", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "seat",
+        "wordTranslate": "asiento", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "second",
+        "wordTranslate": "segundo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "sentence",
+        "wordTranslate": "frase", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "set",
+        "wordTranslate": "set, serie", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "side",
+        "wordTranslate": "lado", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "sign",
+        "wordTranslate": "señal, signo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "sister",
+        "wordTranslate": "hermana", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "size",
+        "wordTranslate": "talla, tamaño", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "skin",
+        "wordTranslate": "piel", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "snow",
+        "wordTranslate": "nieve", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "soldier",
+        "wordTranslate": "soldado", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "solution",
+        "wordTranslate": "solución", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "son",
+        "wordTranslate": "hijo (masculino)", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "spring",
+        "wordTranslate": "primavera", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "square",
+        "wordTranslate": "cuadrado, plaza", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "star",
+        "wordTranslate": "estrella", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "state",
+        "wordTranslate": "estado", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "stop",
+        "wordTranslate": "parada", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "street",
+        "wordTranslate": "calle", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "student",
+        "wordTranslate": "estudiante", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "sugar",
+        "wordTranslate": "azúcar", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "sun",
+        "wordTranslate": "sol", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "village",
+        "wordTranslate": "pueblo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "vowel",
+        "wordTranslate": "vocal (a, e, i, o, u)", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "war",
+        "wordTranslate": "guerra", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "weather",
+        "wordTranslate": "tiempo (clima)", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "weight",
+        "wordTranslate": "peso", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "wife",
+        "wordTranslate": "esposa", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "window",
+        "wordTranslate": "ventana", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "winter",
+        "wordTranslate": "invierno", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "woman (pl women)",
+        "wordTranslate": "mujer", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "word",
+        "wordTranslate": "palabra", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "world",
+        "wordTranslate": "mundo", 
+		"wordType": "noun",  
+		"level": "all"
+    },
+    {
+        "word": "year",
+        "wordTranslate": "año", 
+		"wordType": "noun",  
+		"level": "all"
+    }
+]

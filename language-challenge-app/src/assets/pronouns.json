@@ -1,0 +1,50 @@
+[
+    {
+        "word": "i",
+        "wordTranslate": "yo", 
+		"wordType": "pronoun",  
+		"level": "all"
+    },
+    {
+        "word": "you",
+        "wordTranslate": "tu", 
+		"wordType": "pronoun",  
+		"level": "all"
+    },
+    {
+        "word": "he",
+        "wordTranslate": "él", 
+		"wordType": "pronoun",  
+		"level": "all"
+    },
+    {
+        "word": "she",
+        "wordTranslate": "ella", 
+		"wordType": "pronoun",  
+		"level": "all"
+    },
+    {
+        "word": "it",
+        "wordTranslate": "eso", 
+		"wordType": "pronoun",  
+		"level": "all"
+    },
+    {
+        "word": "we",
+        "wordTranslate": "nosotros/nosotras", 
+		"wordType": "pronoun",  
+		"level": "all"
+    },
+    {
+        "word": "you",
+        "wordTranslate": "ustedes", 
+		"wordType": "pronoun",  
+		"level": "all"
+    },
+    {
+        "word": "they",
+        "wordTranslate": "ellos/ellas", 
+		"wordType": "pronoun",  
+		"level": "all"
+    }
+]

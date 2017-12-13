@@ -1,0 +1,8 @@
+<div class="modal-body text-center">
+        <mat-form-field>
+            <input matInput placeholder="User" [formControl]="userFormControl" [(ngModel)]="user" required>
+            <mat-error *ngIf="userFormControl.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" (click)="userFormControl.valid && saveScore(); ">Save Score</button>
+</div>
