@@ -20,6 +20,8 @@ export class WordComponent implements OnInit {
 
   sound: Howl;
 
+  onWord;
+
   constructor(private wordService: WordService, private wordPaletteService: WordPaletteService) {
     wordPaletteService.changeWord$.subscribe(
       change => {
