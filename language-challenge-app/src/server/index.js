@@ -4,8 +4,10 @@ const Path = require('path');
 const Hapi = require('hapi');
 const Inert = require('inert');
 
+const port = process.env.port || 1337;
+
 const options = {
-    port: 3000,
+    port: port,
     routes: {
         files: {
             relativeTo: Path.join(__dirname, '/')
