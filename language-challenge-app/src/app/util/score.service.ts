@@ -10,7 +10,7 @@ export class ScoreService {
 
     @BlockUI() appBlockUI: NgBlockUI;
 
-    urlService = 'http://localhost:3000/';
+    urlService = 'https://language-challenge-server.azurewebsites.net/';
 
     constructor(private http: HttpClient, private blockUIService: BlockUIService) {
 

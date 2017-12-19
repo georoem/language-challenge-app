@@ -16,7 +16,7 @@ export class JsonService {
     verbs;
     nouns;
     verbTimes;
-    urlService = 'http://localhost:3000/';
+    urlService = 'https://language-challenge-server.azurewebsites.net/';
 
     constructor(private http: HttpClient, private blockUIService: BlockUIService) {
         this.appBlockUI.start('Cargando..');
