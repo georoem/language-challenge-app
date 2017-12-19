@@ -3,7 +3,7 @@
 		"word": "past simple",
 		"wordTranslate": "pasado simple", 
 		"wordType": "verbTime",  
-		"level": "A1,a2,b1,b2,c1,c2"
+		"level": "a1,a2,b1,b2,c1,c2"
 	},
 	{
 		"word": "past continuous",
@@ -39,7 +39,7 @@
 		"word": "present simple",
 		"wordTranslate": "presente simple", 
 		"wordType": "verbTime",  
-		"level": "A1,a2,b1,b2,c1,c2"
+		"level": "a1,a2,b1,b2,c1,c2"
 	},
 	{
 		"word": "present continuous",
@@ -75,7 +75,7 @@
 		"word": "future simple",
 		"wordTranslate": "futuro simple", 
 		"wordType": "verbTime",  
-		"level": "A1,a2,b1,b2,c1,c2"
+		"level": "a1,a2,b1,b2,c1,c2"
 	},
 	{
 		"word": "future continuous",
