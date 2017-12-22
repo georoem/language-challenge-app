@@ -16,11 +16,19 @@ export class WordComponent implements OnInit {
 
   @Input() level: string;
 
+  @Input() challengeType: string;
+
   selectedWord = new Word('', '', '');
+
+  digitWord;
 
   sound: Howl;
 
   onWord;
+
+  TOLERANCE = 2;
+
+  validAnswer;
 
   constructor(private wordService: WordService, private wordPaletteService: WordPaletteService) {
     wordPaletteService.changeWord$.subscribe(
@@ -37,6 +45,8 @@ export class WordComponent implements OnInit {
      if (randomWord) {
        this.selectedWord = randomWord;
      }
+     this.digitWord = '';
+     this.validAnswer = true;
   }
 
   playWordSound(word) {
@@ -46,6 +56,22 @@ export class WordComponent implements OnInit {
     });
 
     this.sound.play();
+  }
+
+  validateWord() {
+    let differences = 0;
+    let isValid = true;
+    for (let i = 0, len = this.digitWord.length; i < len; i++) {
+      if (this.digitWord.charAt(i) !== this.selectedWord.wordTranslate.charAt(i)) {
+        differences++;
+        if (differences > this.TOLERANCE) {
+          isValid = false;
+          return;
+        }
+      }
+    }
+    this.validAnswer = isValid;
+    return isValid;
   }
 
 }

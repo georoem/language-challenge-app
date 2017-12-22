@@ -1,0 +1,16 @@
+<h4 class="text-center">Select the challenge</h4>
+<br>
+<div class="row justify-content-md-center">
+    <div class="col-sm-12 col-xs-12 col-md-4" *ngFor = "let challenge of challenges">
+      <a routerLink="/challenge/{{challenge.id}}">
+        <mat-card class="text-center">
+            <mat-icon>{{challenge.icon}}</mat-icon>
+            <mat-card-content  [style.backgroundColor]="challenge.color" [style.color]="'white'">
+              <h4>{{challenge.typeTitle}}</h4>
+            </mat-card-content>
+        </mat-card>
+        <br>
+      </a>
+    </div>
+</div>
+

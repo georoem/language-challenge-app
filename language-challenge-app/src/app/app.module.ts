@@ -1,3 +1,5 @@
+import { ChallengeService } from './challenge/challenge.service';
+import { ScoreComponent } from './challenge/score/score.component';
 import { AppInterceptor } from './util/app.interceptor';
 import { JsonService } from './util/json.service';
 import { ChronometerService } from './challenge/chronometer/chronometer.service';
@@ -30,8 +32,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { SaveScoreDialogComponent } from './challenge/save-score.dialog';
-import { ScoreDialogComponent } from './challenge/score.dialog';
 import { ScoreService } from './util/score.service';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LevelService } from './util/level.service';
 // import 'reflect-metadata';
 
 @NgModule({
@@ -42,9 +46,10 @@ import { ScoreService } from './util/score.service';
     ChallengeComponent,
     WordComponent,
     SaveScoreDialogComponent,
-    ScoreDialogComponent
+    ScoreComponent,
+    DashboardComponent
   ],
-  entryComponents: [ SaveScoreDialogComponent, ScoreDialogComponent ],
+  entryComponents: [ SaveScoreDialogComponent ],
   imports: [
     BrowserModule,
     MomentModule,
@@ -64,9 +69,16 @@ import { ScoreService } from './util/score.service';
     MatDialogModule,
     MatToolbarModule,
     MatTooltipModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    AppRoutingModule
   ],
-  providers: [WordService, WordPaletteService, ChronometerService, JsonService, ScoreService, {
+  providers: [WordService,
+    WordPaletteService,
+    ChronometerService,
+    JsonService,
+    ScoreService,
+    ChallengeService,
+    LevelService, {
       provide: HTTP_INTERCEPTORS,
       useClass: AppInterceptor,
       multi: true,

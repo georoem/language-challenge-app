@@ -1,4 +1,4 @@
-<mat-card (mouseenter) ="onWord = true" (mouseleave) ="onWord = false">
+<mat-card *ngIf="challengeType == 'BUILD_SENTENCE'" (mouseenter) ="onWord = true" (mouseleave) ="onWord = false">
     <mat-card-title><mat-icon>{{word.icon}}</mat-icon>{{word.typeTitle}}</mat-card-title>
     <mat-card-content [style.backgroundColor]="word.color" [style.color]="'white'">
       <p>{{selectedWord.wordTranslate | lowercase }}</p>
@@ -7,4 +7,16 @@
         <p>{{selectedWord.word | lowercase }}</p>
         <a (click) = "playWordSound(selectedWord.word)"><mat-icon>volume_up</mat-icon></a>
     </mat-card-content>
+</mat-card>
+<mat-card *ngIf="challengeType == 'TRANSLATE_WORD'">
+    <mat-card-title><mat-icon>{{word.icon}}</mat-icon>{{word.typeTitle}}</mat-card-title>
+    <mat-card-content [style.backgroundColor]="word.color" [style.color]="'white'">
+      <p>{{selectedWord.word | lowercase }}</p>
+    </mat-card-content>
+    <mat-form-field class="digitWord">
+        <input matInput type="text" placeholder="Word Translate" [(ngModel)]="digitWord" (keyup.enter)= "validateWord()" >
+    </mat-form-field>
+    <div *ngIf ="!validAnswer" [style.backgroundColor]="warn">
+        <p>{{selectedWord.wordTranslate | lowercase }}</p>
+    </div>
 </mat-card>

@@ -1,5 +1,9 @@
+import { Challenge } from './../challenge.model';
 import { Component, OnInit, Input } from '@angular/core';
 import { WordPaletteService } from './word-palette.service';
+import { WordTypeChallenge } from '../challenge.model';
+import { ChallengeService } from '../challenge.service';
+import {plainToClass} from 'class-transformer';
 
 @Component({
   selector: 'app-word-palette',
@@ -8,16 +12,23 @@ import { WordPaletteService } from './word-palette.service';
 })
 export class WordPaletteComponent implements OnInit {
 
-  @Input() wordTypes: string[];
+  wordTypes: WordTypeChallenge[];
   @Input() level: string;
-  constructor(private wordPaletteService: WordPaletteService) {
+  @Input() challengeId: string;
+  challengeType;
+  constructor(private wordPaletteService: WordPaletteService, private challengeService: ChallengeService) {
     wordPaletteService.changeWords$.subscribe(
       change => {
         this.changeWords();
-      });
+    });
   }
 
   ngOnInit() {
+    this.challengeService.getChallengeForId(this.challengeId).subscribe(result => {
+      const challenge = plainToClass(Challenge , result);
+      this.challengeType = challenge.type;
+      this.wordTypes = plainToClass(WordTypeChallenge, challenge.wordsTypeChallenge);
+    });
   }
 
   changeWords() {

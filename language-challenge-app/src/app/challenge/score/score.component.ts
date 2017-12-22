@@ -1,34 +1,35 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA, MatTableDataSource } from '@angular/material';
-import { ChallengeResult } from './challenge-result.model';
-import { ScoreService } from '../util/score.service';
 import {plainToClass} from 'class-transformer';
+import { ChallengeResult } from '../challenge-result.model';
+import { ScoreService } from '../../util/score.service';
+import { Location } from '@angular/common';
+import { LevelService } from '../../util/level.service';
 
 @Component({
-    selector: 'app-list-score-dialog',
-    templateUrl: 'score.dialog.html',
+    selector: 'app-score',
+    templateUrl: 'score.component.html',
   })
-  export class ScoreDialogComponent {
+  export class ScoreComponent {
 
     challengeResults: ChallengeResult[];
     optionLevels = [];
     displayedColumns = ['position', 'user', 'totalTimeFormatted', 'level'];
-    constructor(public dialogRef: MatDialogRef<ScoreDialogComponent>,
-      @Inject(MAT_DIALOG_DATA) public data: any, private scoreService: ScoreService) {
+    constructor(private scoreService: ScoreService, private location: Location, private levelService: LevelService) {
         this.scoreService.getAllScore().subscribe(result => {
           this.challengeResults = plainToClass(ChallengeResult , result);
         });
-        this.optionLevels = data.optionLevels;
+        this.optionLevels = levelService.getLevels();
       }
-
-    close() {
-      this.dialogRef.close();
-    }
 
     getChallengeResultsDsByLevel(level) {
       if (this.challengeResults) {
         const arrayResult = this.challengeResults.filter(result => result.level === level);
         return new MatTableDataSource<ChallengeResult>(arrayResult);
       }
+    }
+
+    goBack(): void {
+      this.location.back();
     }
   }

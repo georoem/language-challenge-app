@@ -2,6 +2,6 @@
 @import url('~bootstrap/dist/css/bootstrap.css');
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-body {
+/* body {
     background-image: url(~assets/ticks.png);
-}
+} */

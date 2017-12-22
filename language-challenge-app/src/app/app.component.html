@@ -1,10 +1,15 @@
 <block-ui [message]="'Cargando...'">
-<div class="container">
     <mat-toolbar [style.backgroundColor]="'#0D47A1'" [style.color]="'white'">
-        <div class="header-image"></div>
-        <div>Language Challenge</div>
+        <a class="header-image" routerLink="/dashboard"></a>&nbsp;
+        <h4>Language Challenge</h4>
     </mat-toolbar>
-    <app-challenge></app-challenge>    
-</div>
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
 </block-ui>
 
