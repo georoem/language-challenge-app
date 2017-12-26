@@ -21,4 +21,8 @@ import { MatDialogRef } from '@angular/material';
       return this.userFormControl.hasError('required') ? 'You must enter a user name' :
               '';
     }
+
+    nextWord() {
+
+    }
   }

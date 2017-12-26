@@ -14,6 +14,7 @@ import { Router } from '@angular/router';
 import { LevelService } from '../util/level.service';
 import {plainToClass} from 'class-transformer';
 import { ScoreService } from './score/score.service';
+import { WordService } from './word-palette/word/word.service';
 
 @Component({
   selector: 'app-challenge',
@@ -32,7 +33,7 @@ export class ChallengeComponent implements OnInit {
   CHALLENGE_STATE = CHALLENGE_STATE;
   actualStep: number;
   stepResults = [];
-  stepNumber = 10;
+  NUMBER_STEPS = 10;
   challengeResult: ChallengeResult;
   challengeResults = [];
   scoreDialogRef = null;
@@ -40,17 +41,30 @@ export class ChallengeComponent implements OnInit {
   challengeId;
   challenges: Challenge[];
   challenge = new Challenge();
+  isCorrectAnswer = true;
+  totalCorrectAnswers = 0;
 
   constructor(public dialog: MatDialog, private chronometerService: ChronometerService,
     private wordPaletteService: WordPaletteService, private modalService: NgbModal,
     private scoreService: ScoreService, private route: ActivatedRoute, private location: Location,
-    private router: Router, private challengeService: ChallengeService, private levelService: LevelService) {
+    private router: Router, private challengeService: ChallengeService, private levelService: LevelService,
+    private wordService: WordService) {
     chronometerService.chronometerCallback$.subscribe(
       timestamp => {
         this.score += +timestamp;
         this.scoreFormatted = this.score / 1000 + ' Seconds';
-        this.saveStepResult({step: this.actualStep, stepTime: timestamp});
-      });
+        this.saveStepResult({step: this.actualStep, stepTime: timestamp, isCorrectAnswer: this.isCorrectAnswer});
+    });
+    wordService.checkWordCallback$.subscribe(
+      isValid => {
+        this.isCorrectAnswer = isValid;
+        this.totalCorrectAnswers = this.isCorrectAnswer ? this.totalCorrectAnswers + 1 : this.totalCorrectAnswers;
+        this.prepareNextStep();
+    });
+    challengeService.nextStep$.subscribe(
+      next => {
+        this.nextStep();
+    });
     this.challengeId = this.route.snapshot.paramMap.get('id');
     challengeService.getChallengeForId(this.challengeId).subscribe(result => {
       this.challenge = plainToClass(Challenge , result);
@@ -63,26 +77,51 @@ export class ChallengeComponent implements OnInit {
   }
 
   startChallenge() {
-    this.challengeState = CHALLENGE_STATE.STARTED;
+    if (this.challenge.type === 'TRANSLATE_WORD') {
+      this.challengeState = CHALLENGE_STATE.TO_CHECK;
+    } else {
+      this.challengeState = CHALLENGE_STATE.CHECKED;
+    }
+    this.isCorrectAnswer = true;
     this.actualStep = 0;
     this.score = 0;
+    this.totalCorrectAnswers = 0,
     this.stepResults = [];
     this.chronometerService.chronometerStart(true);
     this.wordPaletteService.changeWords(true);
   }
 
-  nextChallenge() {
-    this.chronometerService.chronometerRestart(true);
-    this.wordPaletteService.changeWords(true);
-    this.actualStep++;
-    if (this.actualStep === this.stepNumber - 1) {
-      this.challengeState = CHALLENGE_STATE.TO_FINALIZE;
+  nextStep() {
+    if (this.challengeState === CHALLENGE_STATE.TO_FINALIZE) {
+      this.chronometerService.chronometerStop(true);
+      this.challengeState = CHALLENGE_STATE.FINALIZED;
+    } else {
+      this.chronometerService.chronometerRestart(true);
+      this.wordPaletteService.changeWords(true);
+      this.actualStep++;
+      if (this.challenge.type === 'TRANSLATE_WORD') {
+        this.challengeState = CHALLENGE_STATE.TO_CHECK;
+        this.isCorrectAnswer = false;
+      } else {
+        if (this.actualStep === this.NUMBER_STEPS - 1) {
+          this.challengeState = CHALLENGE_STATE.TO_FINALIZE;
+        } else {
+          this.challengeState = CHALLENGE_STATE.CHECKED;
+        }
+      }
     }
   }
 
-  endChallenge() {
-    this.chronometerService.chronometerStop(true);
-    this.challengeState = CHALLENGE_STATE.FINALIZED;
+  checkStep() {
+    this.wordPaletteService.checkWords(true);
+  }
+
+  prepareNextStep() {
+    if (this.actualStep === this.NUMBER_STEPS - 1) {
+      this.challengeState = CHALLENGE_STATE.TO_FINALIZE;
+    } else {
+      this.challengeState = CHALLENGE_STATE.CHECKED;
+    }
   }
 
   restartChallenge() {
@@ -99,32 +138,38 @@ export class ChallengeComponent implements OnInit {
     });
 
     this.saveScoreDialogRef.afterClosed().subscribe(result => {
-      this.user = result.user;
-      this.saveScore();
-      this.router.navigateByUrl('/results');
+      if (result) {
+        this.user = result.user;
+        this.saveScore();
+      }
     });
   }
 
   saveScore() {
     this.challengeResult = this.getChallengeResult(this.stepResults);
-    this.scoreService.saveScore(this.challengeResult);
-    this.challengeState = CHALLENGE_STATE.UNSTARTED;
+    this.scoreService.saveScore(this.challengeResult).subscribe(data => {
+      this.challengeState = CHALLENGE_STATE.UNSTARTED;
+      this.router.navigateByUrl('/results');
+    });
   }
 
   getChallengeResult(stepResults): ChallengeResult {
     let totalTime = 0;
+    let numberCorrectAnswers = 0;
     for (let i = 0; i < stepResults.length; i++) {
       if (stepResults[i]) {
         totalTime += stepResults[i].stepTime;
+        numberCorrectAnswers += stepResults[i].isCorrectAnswer;
       }
     }
-    return new ChallengeResult(this.user, totalTime, this.level);
+    return new ChallengeResult(this.user, totalTime, this.level, numberCorrectAnswers, this.NUMBER_STEPS);
   }
 }
 
 export enum CHALLENGE_STATE {
   UNSTARTED = 0,
-  STARTED = 1,
+  CHECKED = 1,
   TO_FINALIZE = 2,
-  FINALIZED = 3
+  FINALIZED = 3,
+  TO_CHECK = 4,
 }

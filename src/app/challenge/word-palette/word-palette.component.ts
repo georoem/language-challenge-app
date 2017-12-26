@@ -21,6 +21,10 @@ export class WordPaletteComponent implements OnInit {
       change => {
         this.changeWords();
     });
+    wordPaletteService.checkWords$.subscribe(
+      check => {
+        this.checkWords();
+    });
   }
 
   ngOnInit() {
@@ -33,6 +37,10 @@ export class WordPaletteComponent implements OnInit {
 
   changeWords() {
     this.wordPaletteService.changeWord(true);
+  }
+
+  checkWords() {
+    this.wordPaletteService.checkWord(true);
   }
 
 }

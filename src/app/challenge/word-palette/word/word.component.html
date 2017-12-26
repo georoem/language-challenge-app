@@ -14,9 +14,15 @@
       <p>{{selectedWord.word | lowercase }}</p>
     </mat-card-content>
     <mat-form-field class="digitWord">
-        <input matInput type="text" placeholder="Word Translate" [(ngModel)]="digitWord" (keyup.enter)= "validateWord()" >
+        <input [readonly]="isChecked" matInput type="text" placeholder="Word Translate" [(ngModel)]="digitWord" (keyup.enter)= "checkWord()">
     </mat-form-field>
-    <div *ngIf ="!validAnswer" [style.backgroundColor]="warn">
-        <p>{{selectedWord.wordTranslate | lowercase }}</p>
+    <div *ngIf ="wordState == WORD_STATE.INVALID">
+        <p class="text-danger">The correct traslation is <b>{{selectedWord.wordTranslate | lowercase }}</b></p>
+    </div>
+    <div *ngIf ="wordState == WORD_STATE.ALMOST_VALID">
+        <p class="text-success">The word is almost valid, the correct traslation is <b>{{selectedWord.wordTranslate | lowercase }}</b></p>
+    </div>
+    <div *ngIf ="wordState == WORD_STATE.VALID">
+        <p class="text-success">The traslation is correct!</p>
     </div>
 </mat-card>

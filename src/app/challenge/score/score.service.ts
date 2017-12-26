@@ -17,11 +17,12 @@ export class ScoreService {
         this.urlService = environment.apiUrl;
     }
 
-    public saveScore(score: ChallengeResult) {
+    public saveScore(score: ChallengeResult): Observable<ChallengeResult> {
+        let scoreResult = null;
         this.appBlockUI.start('Cargando..');
-        this.http.post(this.urlService + 'score', score).subscribe(data => {
-            this.appBlockUI.stop();
-        });
+        scoreResult = this.http.post<ChallengeResult>(this.urlService + 'score', score);
+        this.appBlockUI.stop();
+        return scoreResult;
     }
 
     public getScoreByLevel(level): Array<ChallengeResult>  {

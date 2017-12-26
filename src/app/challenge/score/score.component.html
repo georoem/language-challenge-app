@@ -18,6 +18,10 @@
                         <mat-header-cell *matHeaderCellDef> Score in Time </mat-header-cell>
                         <mat-cell *matCellDef="let element"> {{element.totalTimeFormatted}} </mat-cell>
                     </ng-container>
+                    <ng-container matColumnDef="totalCorrectAnswers">
+                        <mat-header-cell *matHeaderCellDef> Correct Answers </mat-header-cell>
+                        <mat-cell *matCellDef="let element"> {{element.totalCorrectAnswers}} / {{element.totalAnswers}} </mat-cell>
+                    </ng-container>
                     <ng-container matColumnDef="level">
                         <mat-header-cell *matHeaderCellDef> Level </mat-header-cell>
                         <mat-cell *matCellDef="let element"> {{element.level}} </mat-cell>

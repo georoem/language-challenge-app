@@ -14,7 +14,7 @@ import { ScoreService } from './score.service';
 
     challengeResults: ChallengeResult[];
     optionLevels = [];
-    displayedColumns = ['position', 'user', 'totalTimeFormatted', 'level'];
+    displayedColumns = ['position', 'user', 'totalTimeFormatted', 'totalCorrectAnswers', 'level'];
     constructor(private scoreService: ScoreService, private location: Location, private levelService: LevelService) {
         this.scoreService.getAllScore().subscribe(result => {
           this.challengeResults = plainToClass(ChallengeResult , result);

@@ -13,6 +13,10 @@ export class ChallengeService {
 
     @BlockUI() appBlockUI: NgBlockUI;
 
+    private nextStepSource = new Subject<boolean>();
+
+    nextStep$ = this.nextStepSource.asObservable();
+
     urlService = '';
 
     challenges;
@@ -50,5 +54,9 @@ export class ChallengeService {
         challenges =  this.http.get<Challenge[]>(this.urlService + 'challenge');
         this.appBlockUI.stop();
         return challenges;
+    }
+
+    nextStep(next: boolean) {
+        this.nextStepSource.next(next);
     }
 }

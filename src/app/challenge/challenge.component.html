@@ -3,7 +3,8 @@
     <br>
     <mat-card *ngIf="challengeState == CHALLENGE_STATE.FINALIZED">
         <mat-card-title><mat-icon>stars</mat-icon> Your Score</mat-card-title>
-        <h2 class="text-primary">{{scoreFormatted}}</h2>&nbsp;
+        <h2 class="text-primary" *ngIf = "challenge.type === 'TRANSLATE_WORD'">{{totalCorrectAnswers}}/{{NUMBER_STEPS}} Correct Answers</h2>
+        <h2 class="text-success">{{scoreFormatted}}</h2>&nbsp;
     </mat-card>
     <app-word-palette [hidden]="challengeState == CHALLENGE_STATE.UNSTARTED || challengeState == CHALLENGE_STATE.FINALIZED" [level] = "level" [challengeId] = "challengeId"></app-word-palette>
     <br>
@@ -16,8 +17,9 @@
     </mat-card>
     <br>
     <button mat-fab color="accent" *ngIf="challengeState == CHALLENGE_STATE.UNSTARTED" (keyup.enter)= "startChallenge()" (click) = "startChallenge()" title="Start">Start</button>
-    <button mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.STARTED" (keyup.enter)= "nextChallenge()" (click) = "nextChallenge()" title="Next"><mat-icon aria-label="Next">navigate_next</mat-icon></button>
-    <button mat-fab color="warn" *ngIf="challengeState == CHALLENGE_STATE.TO_FINALIZE" (keyup.enter)= "endChallenge()" (click) = "endChallenge()" title="Finish">Finish</button>
+    <button mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.CHECKED" (keyup.enter)= "nextStep()" (click) = "nextStep()" title="Next"><mat-icon aria-label="Next">navigate_next</mat-icon></button>
+    <button mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.TO_CHECK" (keyup.enter)= "checkStep()" (click) = "checkStep()" title="Check"><mat-icon aria-label="Check">spellcheck</mat-icon></button>
+    <button mat-fab color="warn" *ngIf="challengeState == CHALLENGE_STATE.TO_FINALIZE" (keyup.enter)= "nextStep()" (click) = "nextStep()" title="Finish">Finish</button>
     <button mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.FINALIZED" (click) = "restartChallenge()" title="Challenge Again"><mat-icon aria-label="Challenge Again">restore</mat-icon></button>
     <button mat-fab color="warn" *ngIf="challengeState == CHALLENGE_STATE.FINALIZED" (click) = "openSaveScore()" title="Save Score"><mat-icon aria-label="Save Score">save</mat-icon></button>
     <br>

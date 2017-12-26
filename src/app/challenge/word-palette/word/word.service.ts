@@ -1,11 +1,16 @@
 import { Injectable } from '@angular/core';
 import { Word } from './word.model';
 import { JsonService } from '../../../util/json.service';
+import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class WordService {
 
   constructor(private jsonService: JsonService) {}
+
+  private checkWordCallbackSource = new Subject<boolean>();
+
+  checkWordCallback$ = this.checkWordCallbackSource.asObservable();
 
   getRandomWord(type: string, level: string): Word {
 
@@ -21,8 +26,10 @@ export class WordService {
       default:
         break;
     }
+  }
 
-
+  checkwordCallback(check: boolean) {
+    this.checkWordCallbackSource.next(check);
   }
 
 }
