@@ -1,3 +1,4 @@
+import { ScoreService } from './challenge/score/score.service';
 import { ChallengeService } from './challenge/challenge.service';
 import { ScoreComponent } from './challenge/score/score.component';
 import { AppInterceptor } from './util/app.interceptor';
@@ -32,7 +33,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { SaveScoreDialogComponent } from './challenge/save-score.dialog';
-import { ScoreService } from './util/score.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LevelService } from './util/level.service';

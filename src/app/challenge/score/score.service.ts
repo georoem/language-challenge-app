@@ -1,20 +1,20 @@
-import { ChallengeResult } from './../challenge/challenge-result.model';
 import { HttpClient } from '@angular/common/http';
 import { BlockUI, BlockUIService, NgBlockUI } from 'ng-block-ui';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
+import { ChallengeResult } from '../challenge-result.model';
+import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class ScoreService {
 
     @BlockUI() appBlockUI: NgBlockUI;
 
-    // urlService = 'https://language-challenge-server.azurewebsites.net/';
-    urlService = 'http://localhost:1337/';
+    urlService = '';
 
     constructor(private http: HttpClient, private blockUIService: BlockUIService) {
-
+        this.urlService = environment.apiUrl;
     }
 
     public saveScore(score: ChallengeResult) {

@@ -2,9 +2,9 @@ import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA, MatTableDataSource } from '@angular/material';
 import {plainToClass} from 'class-transformer';
 import { ChallengeResult } from '../challenge-result.model';
-import { ScoreService } from '../../util/score.service';
 import { Location } from '@angular/common';
 import { LevelService } from '../../util/level.service';
+import { ScoreService } from './score.service';
 
 @Component({
     selector: 'app-score',

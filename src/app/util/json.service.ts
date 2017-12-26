@@ -6,6 +6,7 @@ import { BlockUI, NgBlockUI } from 'ng-block-ui';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class JsonService {
@@ -16,10 +17,11 @@ export class JsonService {
     verbs;
     nouns;
     verbTimes;
-    // urlService = 'https://language-challenge-server.azurewebsites.net/';
-    urlService = 'http://localhost:1337/';
+    urlService = '';
 
     constructor(private http: HttpClient, private blockUIService: BlockUIService) {
+        this.urlService = environment.apiUrl;
+
         this.appBlockUI.start('Cargando..');
         this.http.get(this.urlService + 'words/wordType/pronoun').subscribe(data => {
             this.pronouns = data;

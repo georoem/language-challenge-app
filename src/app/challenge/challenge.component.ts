@@ -8,12 +8,12 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal/modal';
 import * as moment from 'moment';
 import { MatTableDataSource, MatDialog } from '@angular/material';
 import { SaveScoreDialogComponent } from './save-score.dialog';
-import { ScoreService } from '../util/score.service';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 import { LevelService } from '../util/level.service';
 import {plainToClass} from 'class-transformer';
+import { ScoreService } from './score/score.service';
 
 @Component({
   selector: 'app-challenge',
