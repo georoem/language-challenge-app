@@ -1,4 +1,3 @@
-laguange-challenge-server/node_modules/*
-language-challenge-app/node_modules/*
-language-challenge-app/dist/*
-language-challenge-app/src/server/node_modules/*
+node_modules/*
+dist/*
+src/server/node_modules/*
