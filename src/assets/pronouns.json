@@ -1,50 +1,50 @@
 [
     {
-        "word": "i",
-        "wordTranslate": "yo", 
-		"wordType": "pronoun",  
-		"level": "all"
+        "_word": "i",
+        "_wordTranslate": "yo", 
+		"_wordType": "pronoun",  
+		"_level": "all"
     },
     {
-        "word": "you",
-        "wordTranslate": "tu", 
-		"wordType": "pronoun",  
-		"level": "all"
+        "_word": "you",
+        "_wordTranslate": "tu", 
+		"_wordType": "pronoun",  
+		"_level": "all"
     },
     {
-        "word": "he",
-        "wordTranslate": "él", 
-		"wordType": "pronoun",  
-		"level": "all"
+        "_word": "he",
+        "_wordTranslate": "él", 
+		"_wordType": "pronoun",  
+		"_level": "all"
     },
     {
-        "word": "she",
-        "wordTranslate": "ella", 
-		"wordType": "pronoun",  
-		"level": "all"
+        "_word": "she",
+        "_wordTranslate": "ella", 
+		"_wordType": "pronoun",  
+		"_level": "all"
     },
     {
-        "word": "it",
-        "wordTranslate": "eso", 
-		"wordType": "pronoun",  
-		"level": "all"
+        "_word": "it",
+        "_wordTranslate": "eso", 
+		"_wordType": "pronoun",  
+		"_level": "all"
     },
     {
-        "word": "we",
-        "wordTranslate": "nosotros/nosotras", 
-		"wordType": "pronoun",  
-		"level": "all"
+        "_word": "we",
+        "_wordTranslate": "nosotros/nosotras", 
+		"_wordType": "pronoun",  
+		"_level": "all"
     },
     {
-        "word": "you",
-        "wordTranslate": "ustedes", 
-		"wordType": "pronoun",  
-		"level": "all"
+        "_word": "you",
+        "_wordTranslate": "ustedes", 
+		"_wordType": "pronoun",  
+		"_level": "all"
     },
     {
-        "word": "they",
-        "wordTranslate": "ellos/ellas", 
-		"wordType": "pronoun",  
-		"level": "all"
+        "_word": "they",
+        "_wordTranslate": "ellos/ellas", 
+		"_wordType": "pronoun",  
+		"_level": "all"
     }
 ]

@@ -58,7 +58,6 @@ export class ChallengeComponent implements OnInit {
     wordService.checkWordCallback$.subscribe(
       isValid => {
         this.isCorrectAnswer = isValid;
-        this.totalCorrectAnswers = this.isCorrectAnswer ? this.totalCorrectAnswers + 1 : this.totalCorrectAnswers;
         this.prepareNextStep();
     });
     challengeService.nextStep$.subscribe(
@@ -92,6 +91,7 @@ export class ChallengeComponent implements OnInit {
   }
 
   nextStep() {
+    this.totalCorrectAnswers = this.isCorrectAnswer ? this.totalCorrectAnswers + 1 : this.totalCorrectAnswers;
     if (this.challengeState === CHALLENGE_STATE.TO_FINALIZE) {
       this.chronometerService.chronometerStop(true);
       this.challengeState = CHALLENGE_STATE.FINALIZED;
@@ -149,20 +149,18 @@ export class ChallengeComponent implements OnInit {
     this.challengeResult = this.getChallengeResult(this.stepResults);
     this.scoreService.saveScore(this.challengeResult).subscribe(data => {
       this.challengeState = CHALLENGE_STATE.UNSTARTED;
-      this.router.navigateByUrl('/results');
+      this.router.navigateByUrl('/score/' + this.challengeId);
     });
   }
 
   getChallengeResult(stepResults): ChallengeResult {
     let totalTime = 0;
-    let numberCorrectAnswers = 0;
     for (let i = 0; i < stepResults.length; i++) {
       if (stepResults[i]) {
         totalTime += stepResults[i].stepTime;
-        numberCorrectAnswers += stepResults[i].isCorrectAnswer;
       }
     }
-    return new ChallengeResult(this.user, totalTime, this.level, numberCorrectAnswers, this.NUMBER_STEPS);
+    return new ChallengeResult(this.user, totalTime, this.level, this.totalCorrectAnswers, this.NUMBER_STEPS, this.challengeId);
   }
 }
 

@@ -1,102 +1,122 @@
 [
 	{
-		"word": "cheer",
-		"wordTranslate": "animar",
-		"level": "ALL"
+		"_word": "cheer",
+		"_wordTranslate": "animar",
+		"_wordType": "newWord",  
+		"_level": "all"
 	},
 	{
-		"word": "lay",
-		"wordTranslate": "laico",
-		"level": "ALL"
+		"_word": "lay",
+		"_wordTranslate": "laico",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "surveyed",
-		"wordTranslate": "encuestado",
-		"level": "ALL"
+		"_word": "surveyed",
+		"_wordTranslate": "encuestado",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "fence",
-		"wordTranslate": "cerca",
-		"level": "ALL"
+		"_word": "fence",
+		"_wordTranslate": "cerca",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "gladness",
-		"wordTranslate": "alegría",
-		"level": "ALL"
+		"_word": "gladness",
+		"_wordTranslate": "alegría",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "settled",
-		"wordTranslate": "arreglado",
-		"level": "ALL"
+		"_word": "settled",
+		"_wordTranslate": "arreglado",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "burden",
-		"wordTranslate": "carga",
-		"level": "ALL"
+		"_word": "burden",
+		"_wordTranslate": "carga",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "dipped",
-		"wordTranslate": "sumergido",
-		"level": "ALL"
+		"_word": "dipped",
+		"_wordTranslate": "sumergido",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "topmost",
-		"wordTranslate": "más alto",
-		"level": "ALL"
+		"_word": "topmost",
+		"_wordTranslate": "más alto",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "plank",
-		"wordTranslate": "tablón",
-		"level": "ALL"
+		"_word": "plank",
+		"_wordTranslate": "tablón",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "streak",
-		"wordTranslate": "racha",
-		"level": "ALL"
+		"_word": "streak",
+		"_wordTranslate": "racha",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "reaching",
-		"wordTranslate": "alcanzando",
-		"level": "ALL"
+		"_word": "reaching",
+		"_wordTranslate": "alcanzando",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "unwhitewashed",
-		"wordTranslate": "sin lavar",
-		"level": "ALL"
+		"_word": "unwhitewashed",
+		"_wordTranslate": "sin lavar",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "sat",
-		"wordTranslate": "sab",
-		"level": "ALL"
+		"_word": "sat",
+		"_wordTranslate": "sab",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "discouraged",
-		"wordTranslate": "desanimado",
-		"level": "ALL"
+		"_word": "discouraged",
+		"_wordTranslate": "desanimado",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "pail",
-		"wordTranslate": "cubo",
-		"level": "ALL"
+		"_word": "pail",
+		"_wordTranslate": "cubo",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "strike",
-		"wordTranslate": "huelga",
-		"level": "ALL"
+		"_word": "strike",
+		"_wordTranslate": "huelga",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "quarrelling",
-		"wordTranslate": "disputas",
-		"level": "ALL"
+		"_word": "quarrelling",
+		"_wordTranslate": "disputas",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "skylarking",
-		"wordTranslate": "hacer travesuras",
-		"level": "ALL"
+		"_word": "skylarking",
+		"_wordTranslate": "travesuras",
+		"_wordType": "newWord",
+		"_level": "all"
 	},
 	{
-		"word": "pump",
-		"wordTranslate": "bomba",
-		"level": "ALL"
+		"_word": "pump",
+		"_wordTranslate": "bomba",
+		"_wordType": "newWord",
+		"_level": "all"
 	}
 ]

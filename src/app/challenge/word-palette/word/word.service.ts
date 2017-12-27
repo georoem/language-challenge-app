@@ -23,6 +23,8 @@ export class WordService {
         return this.jsonService.getNouns(level)[Math.floor(Math.random() * this.jsonService.getNouns(level).length)];
       case 'TIME':
         return this.jsonService.getVerbTimes(level)[Math.floor(Math.random() * this.jsonService.getVerbTimes(level).length)];
+      case 'NEW':
+        return this.jsonService.getNewWords(level)[Math.floor(Math.random() * this.jsonService.getNewWords(level).length)];
       default:
         break;
     }

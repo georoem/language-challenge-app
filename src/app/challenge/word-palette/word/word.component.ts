@@ -21,7 +21,7 @@ export class WordComponent implements OnInit {
 
   @Input() challengeType: string;
 
-  selectedWord = new Word('', '', '');
+  selectedWord = new Word('', '', '', '');
 
   digitWord;
 

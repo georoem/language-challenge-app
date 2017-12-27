@@ -3,7 +3,7 @@ import * as moment from 'moment';
 export class ChallengeResult {
 
     constructor(private _user: string, private _totalTime: number, private _level: string,
-        private _totalCorrectAnswers: number, private _totalAnswers: number) {
+        private _totalCorrectAnswers: number, private _totalAnswers: number, private _challengeId: string) {
     }
 
     get user() {
@@ -48,6 +48,14 @@ export class ChallengeResult {
 
     set totalAnswers(totaAnswers: number) {
         this._totalAnswers = totaAnswers;
+    }
+
+    get challengeId() {
+        return this._challengeId;
+    }
+
+    set challengeId(challengeId: string) {
+        this._challengeId = challengeId;
     }
 
 }

@@ -6,10 +6,10 @@
         "_color": "#43A047",
         "_icon": "translate",
         "_wordsTypeChallenge": [{
-        "_type": "NOUN",
-            "_typeTitle": "Noun",
+        "_type": "NEW",
+            "_typeTitle": "New Words",
             "_color": "#43A047",
-            "_icon": "nature_people"
+            "_icon": "star"
         }]
     },
     {

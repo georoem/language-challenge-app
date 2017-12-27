@@ -33,6 +33,14 @@ export class ScoreService {
         return score;
     }
 
+    public getAllScoreByChallenge(challenge): Observable<ChallengeResult[]>  {
+        let score = null;
+        this.appBlockUI.start('Cargando..');
+        score = this.http.get(this.urlService + 'score/challenge/' + challenge);
+        this.appBlockUI.stop();
+        return score;
+    }
+
     public getAllScore(): Observable<ChallengeResult[]> {
         let score;
         this.appBlockUI.start('Cargando..');
