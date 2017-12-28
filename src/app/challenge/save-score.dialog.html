@@ -1,6 +1,6 @@
 <div class="modal-body text-center">
     <mat-form-field>
-        <input matInput placeholder="User" [formControl]="userFormControl" [(ngModel)]="user" required>
+        <input matInput placeholder="User" [formControl]="userFormControl" [(ngModel)]="user">
         <mat-error *ngIf="userFormControl.invalid">{{getErrorMessage()}}</mat-error>
     </mat-form-field>
     <br>
