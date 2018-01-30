@@ -4,7 +4,7 @@ const Path = require('path');
 const Hapi = require('hapi');
 const Inert = require('inert');
 
-const port = process.env.port || 1337;
+const port = process.env.port || 8080;
 
 const options = {
     port: port,
