@@ -13,8 +13,8 @@ import {plainToClass} from 'class-transformer';
 export class WordPaletteComponent implements OnInit {
 
   wordTypes: WordTypeChallenge[];
-  @Input() level: string;
-  @Input() challengeId: string;
+  @Input('level') level: string;
+  @Input('challengeId') challengeId: string;
   challengeType;
   constructor(private wordPaletteService: WordPaletteService, private challengeService: ChallengeService) {
     wordPaletteService.changeWords$.subscribe(

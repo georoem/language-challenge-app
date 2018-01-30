@@ -15,11 +15,11 @@ import { ChallengeService } from '../../challenge.service';
 })
 export class WordComponent implements OnInit {
 
-  @Input() word: any;
+  @Input('word') word: any;
 
-  @Input() level: string;
+  @Input('level') level: string;
 
-  @Input() challengeType: string;
+  @Input('challengeType') challengeType: string;
 
   selectedWord = new Word('', '', '', '');
 
