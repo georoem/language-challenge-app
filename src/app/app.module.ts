@@ -2,7 +2,6 @@ import { ScoreService } from './score/score.service';
 import { ChallengeService } from './challenge/challenge.service';
 import { ScoreComponent } from './score/score.component';
 import { AppInterceptor } from './util/app.interceptor';
-import { JsonService } from './util/json.service';
 import { ChronometerService } from './chronometer/chronometer.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -75,7 +74,6 @@ import { LevelService } from './util/level.service';
   providers: [WordService,
     WordPaletteService,
     ChronometerService,
-    JsonService,
     ScoreService,
     ChallengeService,
     LevelService, {
