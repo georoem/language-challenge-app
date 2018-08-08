@@ -1,9 +1,9 @@
 import { Challenge, WordTypeChallenge } from './challenge.model';
 import { ChallengeService } from './challenge.service';
 import { ChallengeResult } from './challenge-result.model';
-import { ChronometerService } from './chronometer/chronometer.service';
+import { ChronometerService } from './../chronometer/chronometer.service';
 import { Component, OnInit } from '@angular/core';
-import { WordPaletteService } from './word-palette/word-palette.service';
+import { WordPaletteService } from './../word-palette/word-palette.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal/modal';
 import * as moment from 'moment';
 import { MatTableDataSource, MatDialog } from '@angular/material';
@@ -13,8 +13,8 @@ import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 import { LevelService } from '../util/level.service';
 import {plainToClass} from 'class-transformer';
-import { ScoreService } from './score/score.service';
-import { WordService } from './word-palette/word/word.service';
+import { ScoreService } from './../score/score.service';
+import { WordService } from './../word/word.service';
 
 @Component({
   selector: 'app-challenge',

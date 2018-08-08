@@ -1,83 +1,112 @@
-[
-    {
-        "_type": "TRANSLATE_WORD",
-        "_typeTitle": "Translate Word",
-        "_description": "Translate the word in the shortest time",
-        "_color": "#43A047",
-        "_icon": "translate",
-        "_wordsTypeChallenge": [{
-        "_type": "NEW",
-            "_typeTitle": "New Words",
-            "_color": "#43A047",
-            "_icon": "star"
-        }]
-    },
-    {
-        "_type": "BUILD_SENTENCE",
-        "_typeTitle": "Build Sentence",
-        "_description": "Build the sentence and pronounce it",
-        "_color": "#039BE5",
-        "_icon": "widgets",
-        "_wordsTypeChallenge": [{
-            "_type": "TIME",
-            "_typeTitle": "Verb Time",
-            "_color": "#039BE5",
-            "_icon": "hourglass_empty"
-        },
-        {
-            "_type": "PRONOUN",
-            "_typeTitle": "Pronoun",
-            "_color": "#8D6E63",
-            "_icon": "face"
-            },
-            {
-            "_type": "VERB",
-            "_typeTitle": "Verb",
-            "_color": "#F4511E",
-            "_icon": "gavel"
-            },
-            {
-            "_type": "NOUN",
-            "_typeTitle": "Noun",
-            "_color": "#43A047",
-            "_icon": "nature_people"
-            }]
-    },
-    {
-        "_type": "BUILD_QUESTION",
-        "_typeTitle": "Build Question",
-        "_description": "Build the question and pronounce it",
-        "_color": "#8D6E63",
-        "_icon": "help",
-        "_wordsTypeChallenge": [{
-        "_type": "TIME",
-        "_typeTitle": "Verb Time",
-        "_color": "#039BE5",
-        "_icon": "hourglass_empty"
-        },
-        {
-        "_type": "AUXILIARY",
-        "_typeTitle": "Auxiliary",
-        "_color": "#757575",
-        "_icon": "directions_walk"
-        },
-        {
-            "_type": "VERB",
-            "_typeTitle": "Verb",
-            "_color": "#F4511E",
-            "_icon": "gavel"
-        },
-        {
-            "_type": "NOUN",
-            "_typeTitle": "Noun",
-            "_color": "#43A047",
-            "_icon": "nature_people"
-        },
-        {
-        "_type": "QUESTION_TYPE",
-        "_typeTitle": "Question Type",
-        "_color": "#E53935",
-        "_icon": "directions_walk"
-        }]
-    }
-]
+[{
+	"_type": "TRANSLATE_WORD",
+	"_typeTitle": "Translate Word",
+	"_description": "Translate the word in the shortest time",
+	"_color": "#43A047",
+	"_icon": "translate",
+	"_wordsTypeChallenge": [{
+		"_type": "NEW",
+		"_typeTitle": "New Words",
+		"_color": "#43A047",
+		"_icon": "star"
+	}]
+},
+{
+	"_type": "BUILD_SENTENCE",
+	"_typeTitle": "Build Sentence",
+	"_description": "Build the sentence and pronounce it",
+	"_color": "#039BE5",
+	"_icon": "widgets",
+	"_wordsTypeChallenge": [{
+		"_type": "TIME",
+		"_typeTitle": "Verb Time",
+		"_color": "#039BE5",
+		"_icon": "hourglass_empty"
+	},
+	{
+		"_type": "PRONOUN",
+		"_typeTitle": "Pronoun",
+		"_color": "#8D6E63",
+		"_icon": "face"
+	},
+	{
+		"_type": "VERB",
+		"_typeTitle": "Verb",
+		"_color": "#F4511E",
+		"_icon": "gavel"
+	},
+	{
+		"_type": "NOUN",
+		"_typeTitle": "Noun",
+		"_color": "#43A047",
+		"_icon": "nature_people"
+	}]
+},
+{
+	"_type": "BUILD_QUESTION",
+	"_typeTitle": "Build Question",
+	"_description": "Build the question and pronounce it",
+	"_color": "#8D6E63",
+	"_icon": "help",
+	"_wordsTypeChallenge": [{
+		"_type": "TIME",
+		"_typeTitle": "Verb Time",
+		"_color": "#039BE5",
+		"_icon": "hourglass_empty"
+	},
+	{
+		"_type": "AUXILIARY",
+		"_typeTitle": "Auxiliary",
+		"_color": "#757575",
+		"_icon": "directions_walk"
+	},
+	{
+		"_type": "VERB",
+		"_typeTitle": "Verb",
+		"_color": "#F4511E",
+		"_icon": "gavel"
+	},
+	{
+		"_type": "NOUN",
+		"_typeTitle": "Noun",
+		"_color": "#43A047",
+		"_icon": "nature_people"
+	},
+	{
+		"_type": "QUESTION_TYPE",
+		"_typeTitle": "Question Type",
+		"_color": "#E53935",
+		"_icon": "directions_walk"
+	}]
+},
+{
+	"_type": "ANSWER_QUESTION",
+	"_typeTitle": "Answer the Question",
+	"_description": "Answer the question",
+	"_color": "#ff9933",
+	"_icon": "sentiment_very_satisfied",
+	"_wordsTypeChallenge": [{
+		"_type": "QUESTION_WORD",
+		"_typeTitle": "Question Word",
+		"_color": "#039BE5",
+		"_icon": "hourglass_empty"
+	},
+	{
+		"_type": "AUXILIARY_VERB",
+		"_typeTitle": "Auxiliary Verb",
+		"_color": "#757575",
+		"_icon": "directions_walk"
+	},
+	{
+		"_type": "PRONOUN",
+		"_typeTitle": "Pronoun",
+		"_color": "#8D6E63",
+		"_icon": "face"
+	},
+	{
+		"_type": "NOUN",
+		"_typeTitle": "Noun",
+		"_color": "#43A047",
+		"_icon": "nature_people"
+	}]
+}]

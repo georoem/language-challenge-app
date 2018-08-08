@@ -1,8 +1,8 @@
-import { Challenge } from './../challenge.model';
+import { WordTypeChallenge } from './../challenge/challenge.model';
+import { Challenge } from './../challenge/challenge.model';
 import { Component, OnInit, Input } from '@angular/core';
 import { WordPaletteService } from './word-palette.service';
-import { WordTypeChallenge } from '../challenge.model';
-import { ChallengeService } from '../challenge.service';
+import { ChallengeService } from './../challenge/challenge.service';
 import {plainToClass} from 'class-transformer';
 
 @Component({

@@ -3,8 +3,8 @@ import { BlockUI, BlockUIService, NgBlockUI } from 'ng-block-ui';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
-import { ChallengeResult } from '../challenge-result.model';
-import { environment } from '../../../environments/environment';
+import { ChallengeResult } from '../challenge/challenge-result.model';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class ScoreService {

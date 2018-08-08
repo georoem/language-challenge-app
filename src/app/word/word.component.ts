@@ -3,9 +3,9 @@ import { Word } from './word.model';
 import { WordService } from './word.service';
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
-import { WordPaletteService } from '../word-palette.service';
+import { WordPaletteService } from './../word-palette/word-palette.service';
 import { Howl } from 'howler';
-import { ChallengeService } from '../../challenge.service';
+import { ChallengeService } from './../challenge/challenge.service';
 
 
 @Component({

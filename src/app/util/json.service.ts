@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
-import { Word } from '../challenge/word-palette/word/word.model';
+import { Word } from './../word/word.model';
 import {plainToClass} from 'class-transformer';
 
 @Injectable()

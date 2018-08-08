@@ -1,0 +1,66 @@
+[{
+	"_word": "where",
+	"_wordTranslate": "donde", 
+	"_wordType": "questionWord",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "what",
+	"_wordTranslate": "que", 
+	"_wordType": "questionWord",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "how",
+	"_wordTranslate": "como", 
+	"_wordType": "questionWord",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "how many",
+	"_wordTranslate": "cuantos", 
+	"_wordType": "questionWord",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "how much",
+	"_wordTranslate": "cuanto cuesta", 
+	"_wordType": "questionWord",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "how long",
+	"_wordTranslate": "cuánto tiempo", 
+	"_wordType": "questionWord",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "when",
+	"_wordTranslate": "cuando", 
+	"_wordType": "questionWord",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "what time",
+	"_wordTranslate": "qué hora", 
+	"_wordType": "questionWord",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "why",
+	"_wordTranslate": "por qué", 
+	"_wordType": "questionWord",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "who",
+	"_wordTranslate": "quien", 
+	"_wordType": "questionWord",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "which",
+	"_wordTranslate": "cual", 
+	"_wordType": "questionWord",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+}]

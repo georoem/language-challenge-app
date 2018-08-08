@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Word } from './word.model';
-import { JsonService } from '../../../util/json.service';
+import { JsonService } from './../util/json.service';
 import { Subject } from 'rxjs/Subject';
 
 @Injectable()

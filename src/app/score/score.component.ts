@@ -1,13 +1,13 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA, MatTableDataSource } from '@angular/material';
 import {plainToClass} from 'class-transformer';
-import { ChallengeResult } from '../challenge-result.model';
+import { ChallengeResult } from './../challenge/challenge-result.model';
 import { Location } from '@angular/common';
-import { LevelService } from '../../util/level.service';
+import { LevelService } from './../util/level.service';
 import { ScoreService } from './score.service';
 import { ActivatedRoute } from '@angular/router';
-import { ChallengeService } from '../challenge.service';
-import { Challenge } from '../challenge.model';
+import { ChallengeService } from './../challenge/challenge.service';
+import { Challenge } from './../challenge/challenge.model';
 
 @Component({
     selector: 'app-score',

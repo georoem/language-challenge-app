@@ -1,0 +1,90 @@
+[{
+	"_word": "do",
+	"_wordTranslate": "hacer", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "does",
+	"_wordTranslate": "hace", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "did",
+	"_wordTranslate": "hizo", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "are",
+	"_wordTranslate": "son", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "is",
+	"_wordTranslate": "es", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "were",
+	"_wordTranslate": "fueron", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "was",
+	"_wordTranslate": "estaba", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "have",
+	"_wordTranslate": "tener", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "has",
+	"_wordTranslate": "tiene", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "will",
+	"_wordTranslate": "será", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "would",
+	"_wordTranslate": "haría", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "could",
+	"_wordTranslate": "podría", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "should",
+	"_wordTranslate": "debería", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "must",
+	"_wordTranslate": "debe", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+},
+{
+	"_word": "shall",
+	"_wordTranslate": "deberá", 
+	"_wordType": "auxiliaryVerb",  
+	"_level": "a1,a2,b1,b2,c1,c2"
+}]

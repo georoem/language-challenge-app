@@ -1,5 +1,5 @@
 import { ChallengeComponent } from './challenge/challenge.component';
-import { ScoreComponent } from './challenge/score/score.component';
+import { ScoreComponent } from './score/score.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
