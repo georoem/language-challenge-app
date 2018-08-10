@@ -1,3 +1,4 @@
+import { WordService } from './../word/word.service';
 import { WordTypeChallenge } from './../challenge/challenge.model';
 import { Challenge } from './../challenge/challenge.model';
 import { Component, OnInit, Input } from '@angular/core';
@@ -16,7 +17,7 @@ export class WordPaletteComponent implements OnInit {
   @Input('level') level: string;
   @Input('challengeId') challengeId: string;
   challengeType;
-  constructor(private wordPaletteService: WordPaletteService, private challengeService: ChallengeService) {
+  constructor(private wordPaletteService: WordPaletteService, private challengeService: ChallengeService, private wordService: WordService) {
     wordPaletteService.changeWords$.subscribe(
       change => {
         this.changeWords();
@@ -29,9 +30,10 @@ export class WordPaletteComponent implements OnInit {
 
   ngOnInit() {
     this.challengeService.getChallengeForId(this.challengeId).subscribe(result => {
-      const challenge = plainToClass(Challenge , result);
+      const challenge = plainToClass(Challenge, result);
       this.challengeType = challenge.type;
       this.wordTypes = plainToClass(WordTypeChallenge, challenge.wordsTypeChallenge);
+      this.wordService.initWordTypes(this.wordTypes);
     });
   }
 

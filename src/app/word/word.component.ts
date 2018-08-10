@@ -1,3 +1,4 @@
+import { WordTypeChallenge } from './../challenge/challenge.model';
 import { FormControl, Validators } from '@angular/forms';
 import { Word } from './word.model';
 import { WordService } from './word.service';
@@ -14,6 +15,8 @@ import { ChallengeService } from './../challenge/challenge.service';
   styleUrls: ['./word.component.css']
 })
 export class WordComponent implements OnInit {
+
+  @Input('wordTypes') wordTypes: WordTypeChallenge[];
 
   @Input('word') word: any;
 
@@ -39,6 +42,7 @@ export class WordComponent implements OnInit {
 
   constructor(private wordService: WordService, private wordPaletteService: WordPaletteService,
   private challengeService: ChallengeService) {
+
     wordPaletteService.changeWord$.subscribe(
       change => {
         this.changeWord();

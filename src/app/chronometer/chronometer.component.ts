@@ -45,7 +45,7 @@ export class ChronometerComponent implements OnInit, OnDestroy {
     this.interval = setInterval(() => {
       const elapsedTime = Date.now() - startTime;
       this.timestamp = (elapsedTime );
-      this.chrono = moment(0).hour(0).minute(0).second(0).millisecond(this.timestamp).format('HH : mm : ss :SSS');
+      this.chrono = moment(0).hour(0).minute(0).second(0).millisecond(this.timestamp).format(' mm : ss ');
      } , 10);
   }
 

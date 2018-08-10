@@ -109,4 +109,35 @@
 		"_color": "#43A047",
 		"_icon": "nature_people"
 	}]
+},
+{
+	"_type": "KEEP_TALKING",
+	"_typeTitle": "Keep Talking",
+	"_description": "Keep Talking",
+	"_color": "#889933",
+	"_icon": "people",
+	"_wordsTypeChallenge": [{
+		"_type": "questionWord",
+		"_typeTitle": "Question Word",
+		"_color": "#039BE5",
+		"_icon": "hourglass_empty"
+	},
+	{
+		"_type": "auxiliaryVerb",
+		"_typeTitle": "Auxiliary Verb",
+		"_color": "#757575",
+		"_icon": "directions_walk"
+	},
+	{
+		"_type": "pronoun",
+		"_typeTitle": "Pronoun",
+		"_color": "#8D6E63",
+		"_icon": "face"
+	},
+	{
+		"_type": "noun",
+		"_typeTitle": "Noun",
+		"_color": "#43A047",
+		"_icon": "nature_people"
+	}]
 }]
