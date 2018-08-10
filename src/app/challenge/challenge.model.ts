@@ -58,7 +58,7 @@ export class Challenge {
 
 export class WordTypeChallenge {
     public constructor(private _type: string, private _typeTitle: string ,
-        private _color: string, private _icon: string) {}
+        private _color: string, private _icon: string, private _random: boolean) {}
 
     set type(type: string) {
         this._type = type;
@@ -90,6 +90,14 @@ export class WordTypeChallenge {
 
     get icon() {
         return this._icon;
+    }
+
+    set random(random: boolean) {
+        this._random = random;
+    }
+
+    get random() {
+        return this._random;
     }
 
 }

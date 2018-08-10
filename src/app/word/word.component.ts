@@ -57,9 +57,9 @@ export class WordComponent implements OnInit {
   }
 
   changeWord() {
-     const randomWord = this.wordService.getRandomWord(this.word.type, this.level);
-     if (randomWord) {
-       this.selectedWord = randomWord;
+     const word = this.wordService.getWord(this.word.type, this.level);
+     if (word) {
+       this.selectedWord = word;
      }
      this.digitWord = '';
      this.wordState = WORD_STATE.UNCHECK;

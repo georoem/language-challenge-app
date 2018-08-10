@@ -1,7 +1,11 @@
 <ng-container *ngIf="challengeType == 'BUILD_SENTENCE';then build_sentence else second"></ng-container>
 
 <ng-template #second>
-    <ng-container *ngIf="challengeType == 'TRANSLATE_WORD'; then translate_word else other_challenge"></ng-container>
+    <ng-container *ngIf="challengeType == 'TRANSLATE_WORD'; then translate_word else third"></ng-container>
+</ng-template>
+
+<ng-template #third>
+    <ng-container *ngIf="challengeType == 'ANSWER_QUESTION' || challengeType == 'KEEP_TALKING'; then answer_question_keep_talking else other_challenge"></ng-container>
 </ng-template>
 
 <ng-template #build_sentence>
@@ -36,6 +40,19 @@
         <p class="text-success">The traslation is correct!</p>
     </div>
 </mat-card>
+</ng-template>
+
+<ng-template #answer_question_keep_talking>
+    <mat-card (mouseenter) ="onWord = true" (mouseleave) ="onWord = false">
+        <mat-card-title><mat-icon>{{word.icon}}</mat-icon>{{word.typeTitle}}</mat-card-title>
+        <mat-card-content [style.backgroundColor]="word.color" [style.color]="'white'">
+          <p>{{selectedWord.word | lowercase }}</p>
+          <a (click) = "playWordSound(selectedWord.word)"><mat-icon>volume_up</mat-icon></a>
+        </mat-card-content>
+        <mat-card-content *ngIf="onWord" [style.backgroundColor]="'#78909C'" [style.color]="'white'">
+            <p>{{selectedWord.wordTranslate | lowercase }}</p>
+        </mat-card-content>
+    </mat-card>
 </ng-template>
 
 <ng-template #other_challenge>

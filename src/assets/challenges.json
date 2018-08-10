@@ -8,7 +8,8 @@
 		"_type": "newWord",
 		"_typeTitle": "New Words",
 		"_color": "#43A047",
-		"_icon": "star"
+		"_icon": "star",
+		"_random": true
 	}]
 },
 {
@@ -21,25 +22,29 @@
 		"_type": "verbTime",
 		"_typeTitle": "Verb Time",
 		"_color": "#039BE5",
-		"_icon": "hourglass_empty"
+		"_icon": "hourglass_empty",
+		"_random": true
 	},
 	{
 		"_type": "pronoun",
 		"_typeTitle": "Pronoun",
 		"_color": "#8D6E63",
-		"_icon": "face"
+		"_icon": "face",
+		"_random": true
 	},
 	{
 		"_type": "verb",
 		"_typeTitle": "Verb",
 		"_color": "#F4511E",
-		"_icon": "gavel"
+		"_icon": "gavel",
+		"_random": true
 	},
 	{
 		"_type": "noun",
 		"_typeTitle": "Noun",
 		"_color": "#43A047",
-		"_icon": "nature_people"
+		"_icon": "nature_people",
+		"_random": true
 	}]
 },
 {
@@ -52,31 +57,36 @@
 		"_type": "verbTime",
 		"_typeTitle": "Verb Time",
 		"_color": "#039BE5",
-		"_icon": "hourglass_empty"
+		"_icon": "hourglass_empty",
+		"_random": true
 	},
 	{
 		"_type": "auxiliaryVerb",
 		"_typeTitle": "Auxiliary Verb",
 		"_color": "#757575",
-		"_icon": "directions_walk"
+		"_icon": "directions_walk",
+		"_random": true
 	},
 	{
 		"_type": "verb",
 		"_typeTitle": "Verb",
 		"_color": "#F4511E",
-		"_icon": "gavel"
+		"_icon": "gavel",
+		"_random": true
 	},
 	{
 		"_type": "noun",
 		"_typeTitle": "Noun",
 		"_color": "#43A047",
-		"_icon": "nature_people"
+		"_icon": "nature_people",
+		"_random": true
 	},
 	{
 		"_type": "questionWord",
 		"_typeTitle": "Question Type",
 		"_color": "#E53935",
-		"_icon": "directions_walk"
+		"_icon": "directions_walk",
+		"_random": true
 	}]
 },
 {
@@ -86,28 +96,11 @@
 	"_color": "#ff9933",
 	"_icon": "sentiment_very_satisfied",
 	"_wordsTypeChallenge": [{
-		"_type": "questionWord",
+		"_type": "question",
 		"_typeTitle": "Question Word",
 		"_color": "#039BE5",
-		"_icon": "hourglass_empty"
-	},
-	{
-		"_type": "auxiliaryVerb",
-		"_typeTitle": "Auxiliary Verb",
-		"_color": "#757575",
-		"_icon": "directions_walk"
-	},
-	{
-		"_type": "pronoun",
-		"_typeTitle": "Pronoun",
-		"_color": "#8D6E63",
-		"_icon": "face"
-	},
-	{
-		"_type": "noun",
-		"_typeTitle": "Noun",
-		"_color": "#43A047",
-		"_icon": "nature_people"
+		"_icon": "hourglass_empty",
+		"_random": true
 	}]
 },
 {
@@ -117,27 +110,10 @@
 	"_color": "#889933",
 	"_icon": "people",
 	"_wordsTypeChallenge": [{
-		"_type": "questionWord",
-		"_typeTitle": "Question Word",
+		"_type": "talk",
+		"_typeTitle": "Talk",
 		"_color": "#039BE5",
-		"_icon": "hourglass_empty"
-	},
-	{
-		"_type": "auxiliaryVerb",
-		"_typeTitle": "Auxiliary Verb",
-		"_color": "#757575",
-		"_icon": "directions_walk"
-	},
-	{
-		"_type": "pronoun",
-		"_typeTitle": "Pronoun",
-		"_color": "#8D6E63",
-		"_icon": "face"
-	},
-	{
-		"_type": "noun",
-		"_typeTitle": "Noun",
-		"_color": "#43A047",
-		"_icon": "nature_people"
+		"_icon": "hourglass_empty",
+		"_random": false
 	}]
 }]

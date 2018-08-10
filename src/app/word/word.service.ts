@@ -31,6 +31,8 @@ export class WordService {
                 this.appBlockUI.start('Cargando..');
                 this.http.get<Word[]>(this.urlService + 'words/wordType/'+element.type).subscribe(data => {
                     this.words[element.type] = plainToClass(Word, data);
+                    this.words[element.type].random = element.random;
+                    this.words[element.type].lastWordIndex = 0;
                     this.appBlockUI.stop();
                 });
             });
@@ -45,9 +47,17 @@ export class WordService {
         this.checkWordCallbackSource.next(check);
     }
 
-    getRandomWord(type: string, level: string): Word {
+    getWord(type: string, level: string): Word {
         let words = this.getWords(type, level);
-        return words[Math.floor(Math.random() * words.length)];
+        let random = this.words[type].random;
+        let word: Word;
+        if(random) {
+            word = words[Math.floor(Math.random() * words.length)];
+        } else {
+            word = words[this.words[type].lastWordIndex];
+            this.words[type].lastWordIndex ++;
+        }
+        return word;
     }
 
     public getWords(type, level) {
