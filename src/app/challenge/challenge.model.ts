@@ -1,7 +1,7 @@
 export class Challenge {
 
     public constructor(private _id?: string, private _type?: string, private _typeTitle?: string , private _description?: string,
-                        private _color?: string, private _icon?: string, private _wordsTypeChallenge?: WordTypeChallenge[]) {}
+                        private _color?: string, private _icon?: string, private _fixedSteps?: boolean, private _numberSteps?: number, private _wordsTypeChallenge?: WordTypeChallenge[]) {}
 
     get id() {
         return this._id;
@@ -45,6 +45,22 @@ export class Challenge {
 
     get icon() {
         return this._icon;
+    }
+
+    set fixedSteps(fixedSteps: boolean) {
+        this._fixedSteps = fixedSteps;
+    }
+
+    get fixedSteps() {
+        return this._fixedSteps;
+    }
+
+    set numberSteps(numberSteps: number) {
+        this._numberSteps = numberSteps;
+    }
+
+    get numberSteps() {
+        return this._numberSteps;
     }
 
     set wordsTypeChallenge(wordsTypeChallenge: WordTypeChallenge[]) {

@@ -1,8 +1,9 @@
+import { Subscription } from 'rxjs/Subscription';
 import { WordTypeChallenge } from './../challenge/challenge.model';
 import { FormControl, Validators } from '@angular/forms';
 import { Word } from './word.model';
 import { WordService } from './word.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Input } from '@angular/core';
 import { WordPaletteService } from './../word-palette/word-palette.service';
 import { Howl } from 'howler';
@@ -14,7 +15,7 @@ import { ChallengeService } from './../challenge/challenge.service';
   templateUrl: './word.component.html',
   styleUrls: ['./word.component.css']
 })
-export class WordComponent implements OnInit {
+export class WordComponent implements OnInit,OnDestroy {
 
   @Input('wordTypes') wordTypes: WordTypeChallenge[];
 
@@ -23,6 +24,8 @@ export class WordComponent implements OnInit {
   @Input('level') level: string;
 
   @Input('challengeType') challengeType: string;
+
+  private subscription: Subscription = new Subscription();
 
   selectedWord = new Word('', '', '', '');
 
@@ -43,14 +46,10 @@ export class WordComponent implements OnInit {
   constructor(private wordService: WordService, private wordPaletteService: WordPaletteService,
   private challengeService: ChallengeService) {
 
-    wordPaletteService.changeWord$.subscribe(
+    this.subscription.add(wordPaletteService.changeWord$.subscribe(
       change => {
         this.changeWord();
-    });
-    wordPaletteService.checkWord$.subscribe(
-      check => {
-        this.checkWord();
-    });
+    }));
   }
 
   ngOnInit() {
@@ -114,6 +113,10 @@ export class WordComponent implements OnInit {
         this.wordState = WORD_STATE.INVALID;
       }
       return isValid;
+  }
+
+  public ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 
 }

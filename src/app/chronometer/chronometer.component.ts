@@ -17,24 +17,24 @@ export class ChronometerComponent implements OnInit, OnDestroy {
   timestamp;
   totalTime;
   interval = null;
-  private subscription: Subscription;
+  private subscription: Subscription = new Subscription();
 
   constructor(private chronometerService: ChronometerService) {
 
-    chronometerService.chronometerStop$.subscribe(
+    this.subscription.add(chronometerService.chronometerStop$.subscribe(
       reset => {
         this.stopTimer();
-      });
+      }));
 
-    chronometerService.chronometerRestart$.subscribe(
+      this.subscription.add(chronometerService.chronometerRestart$.subscribe(
       reset => {
         this.restartTimer();
-      });
+      }));
 
-    chronometerService.chronometerStart$.subscribe(
+      this.subscription.add(chronometerService.chronometerStart$.subscribe(
       start => {
         this.startTimer();
-      });
+      }));
    }
 
   ngOnInit() {
@@ -66,7 +66,7 @@ export class ChronometerComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.unsubscribeTimer();
+    this.subscription.unsubscribe();
   }
 
 }

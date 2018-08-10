@@ -29,12 +29,27 @@ export class WordService {
         if(wordTypes) {
             wordTypes.forEach(element => {
                 this.appBlockUI.start('Cargando..');
-                this.http.get<Word[]>(this.urlService + 'words/wordType/'+element.type).subscribe(data => {
-                    this.words[element.type] = plainToClass(Word, data);
-                    this.words[element.type].random = element.random;
-                    this.words[element.type].lastWordIndex = 0;
-                    this.appBlockUI.stop();
-                });
+                if(element.type == 'talk') {
+                    this.http.get<string[]>(this.urlService + 'words/distinct/_wordGroupId/'+element.type).subscribe(data => {
+                        if(data) {
+                            let randomGroup = data[Math.floor(Math.random() * data.length)];
+                            this.http.get<Word[]>(this.urlService + 'words/wordTypeGroup/'+element.type+'/'+randomGroup).subscribe(data => {
+                                this.words[element.type] = plainToClass(Word, data);
+                                this.words[element.type].random = element.random;
+                                this.words[element.type].lastWordIndex = 0;
+                                this.appBlockUI.stop();
+                            });
+                        }
+                        this.appBlockUI.stop();
+                    });
+                } else {
+                    this.http.get<Word[]>(this.urlService + 'words/wordType/'+element.type).subscribe(data => {
+                        this.words[element.type] = plainToClass(Word, data);
+                        this.words[element.type].random = element.random;
+                        this.words[element.type].lastWordIndex = 0;
+                        this.appBlockUI.stop();
+                    });
+                }
             });
         }
     }

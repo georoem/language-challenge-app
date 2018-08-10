@@ -1,42 +1,49 @@
 [{
 	"_word": "Can we go to the baseball game?",
 	"_wordTranslate": "Podemos ir al juego de béisbol?",
-	"_wordType": "talk",  
+	"_wordType": "talk",
+	"_wordGroupId": "1",
 	"_level": "all"
 },
 {
 	"_word": "I love baseball, and you?",
 	"_wordTranslate": "Me encanta el beisbol",
 	"_wordType": "talk",  
+	"_wordGroupId": "1",
 	"_level": "all"
 },
 {
 	"_word": "I love to eat the peanuts at baseball games, and you?",
 	"_wordTranslate": "Me encanta comer los cacahuetes en los partidos de beisbol",
 	"_wordType": "talk",  
+	"_wordGroupId": "1",
 	"_level": "all"
 },
 {
 	"_word": "I hope we’ll see a home run",
 	"_wordTranslate": "Espero que veamos un jonrón",
 	"_wordType": "talk",  
+	"_wordGroupId": "1",
 	"_level": "all"
 },
 {
 	"_word": "Bring a jacket",
 	"_wordTranslate": "Trae una chaqueta",
 	"_wordType": "talk",  
+	"_wordGroupId": "1",
 	"_level": "all"
 },
 {
 	"_word": "Yes. It gets a little cool at night",
 	"_wordTranslate": "Sí. Se pone un poco frío por la noche",
 	"_wordType": "talk",  
+	"_wordGroupId": "1",
 	"_level": "all"
 },
 {
 	"_word": "Bring a glove to catch a foul ball",
 	"_wordTranslate": "Trae un guante para atrapar una bola de foul",
 	"_wordType": "talk",  
+	"_wordGroupId": "1",
 	"_level": "all"
 }]

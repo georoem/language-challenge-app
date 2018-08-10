@@ -1,8 +1,9 @@
+import { Subscription } from 'rxjs/Subscription';
 import { Challenge, WordTypeChallenge } from './challenge.model';
 import { ChallengeService } from './challenge.service';
 import { ChallengeResult } from './challenge-result.model';
 import { ChronometerService } from './../chronometer/chronometer.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { WordPaletteService } from './../word-palette/word-palette.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal/modal';
 import * as moment from 'moment';
@@ -21,7 +22,7 @@ import { WordService } from './../word/word.service';
   templateUrl: './challenge.component.html',
   styleUrls: ['./challenge.component.css']
 })
-export class ChallengeComponent implements OnInit {
+export class ChallengeComponent implements OnInit, OnDestroy {
 
   level = 'A1';
   optionLevels;
@@ -43,30 +44,32 @@ export class ChallengeComponent implements OnInit {
   challenge = new Challenge();
   isCorrectAnswer = true;
   totalCorrectAnswers = 0;
+  private subscription: Subscription = new Subscription();
 
   constructor(public dialog: MatDialog, private chronometerService: ChronometerService,
     private wordPaletteService: WordPaletteService, private modalService: NgbModal,
     private scoreService: ScoreService, private route: ActivatedRoute, private location: Location,
     private router: Router, private challengeService: ChallengeService, private levelService: LevelService,
     private wordService: WordService) {
-    chronometerService.chronometerCallback$.subscribe(
+      this.subscription.add(chronometerService.chronometerCallback$.subscribe(
       timestamp => {
         this.score += +timestamp;
         this.scoreFormatted = this.score / 1000 + ' Seconds';
         this.saveStepResult({step: this.actualStep, stepTime: timestamp, isCorrectAnswer: this.isCorrectAnswer});
-    });
-    wordService.checkWordCallback$.subscribe(
+    }));
+    this.subscription.add(wordService.checkWordCallback$.subscribe(
       isValid => {
         this.isCorrectAnswer = isValid;
         this.prepareNextStep();
-    });
-    challengeService.nextStep$.subscribe(
+    }));
+    this.subscription.add(challengeService.nextStep$.subscribe(
       next => {
         this.nextStep();
-    });
+    }));
     this.challengeId = this.route.snapshot.paramMap.get('id');
     challengeService.getChallengeForId(this.challengeId).subscribe(result => {
       this.challenge = plainToClass(Challenge , result);
+      this.NUMBER_STEPS = this.challenge.numberSteps;
       this.selectedOrderWords = plainToClass(WordTypeChallenge, this.challenge.wordsTypeChallenge);
     });
     this.optionLevels = levelService.getLevels();
@@ -161,6 +164,10 @@ export class ChallengeComponent implements OnInit {
       }
     }
     return new ChallengeResult(this.user, totalTime, this.level, this.totalCorrectAnswers, this.NUMBER_STEPS, this.challengeId);
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }
 

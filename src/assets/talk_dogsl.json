@@ -1,0 +1,56 @@
+[{
+	"_word": "Do you have to walk the dog?",
+	"_wordTranslate": "Tienes que pasear al perro?",
+	"_wordType": "talk",  
+	"_wordGroupId": "2",
+	"_level": "all"
+},
+{
+	"_word": "What kind of dog do you have?",
+	"_wordTranslate": "Qué tipo de perro tienes?",
+	"_wordType": "talk",  
+	"_wordGroupId": "2",
+	"_level": "all"
+},
+{
+	"_word": "Those dogs bark a lot",
+	"_wordTranslate": "Esos perros ladran mucho",
+	"_wordType": "talk",  
+	"_wordGroupId": "2",
+	"_level": "all"
+},
+{
+	"_word": "They bark at everything",
+	"_wordTranslate": "Ladran a todo",
+	"_wordType": "talk",  
+	"_wordGroupId": "2",
+	"_level": "all"
+},
+{
+	"_word": "They never shut up",
+	"_wordTranslate": "Ellos nunca se callan",
+	"_wordType": "talk",  
+	"_wordGroupId": "2",
+	"_level": "all"
+},
+{
+	"_word": "Why did you get that dog?",
+	"_wordTranslate": "Por qué conseguiste ese perro?",
+	"_wordType": "talk",  
+	"_wordGroupId": "2",
+	"_level": "all"
+},
+{
+	"_word": "Does it like to your mom?",
+	"_wordTranslate": "Le gusta a tu madre?",
+	"_wordType": "talk",  
+	"_wordGroupId": "2",
+	"_level": "all"
+},
+{
+	"_word": "So she likes pets",
+	"_wordTranslate": "Entonces a ella le gustan las mascotas",
+	"_wordType": "talk",  
+	"_wordGroupId": "2",
+	"_level": "all"
+}]
