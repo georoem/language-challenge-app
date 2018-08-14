@@ -51,25 +51,33 @@ export class ChallengeComponent implements OnInit, OnDestroy {
     private scoreService: ScoreService, private route: ActivatedRoute, private location: Location,
     private router: Router, private challengeService: ChallengeService, private levelService: LevelService,
     private wordService: WordService) {
-      this.subscription.add(chronometerService.chronometerCallback$.subscribe(
+    
+    this.subscription.add(chronometerService.chronometerCallback$.subscribe(
       timestamp => {
         this.score += +timestamp;
         this.scoreFormatted = this.score / 1000 + ' Seconds';
         this.saveStepResult({step: this.actualStep, stepTime: timestamp, isCorrectAnswer: this.isCorrectAnswer});
     }));
+    
     this.subscription.add(wordService.checkWordCallback$.subscribe(
       isValid => {
         this.isCorrectAnswer = isValid;
         this.prepareNextStep();
     }));
+    
     this.subscription.add(challengeService.nextStep$.subscribe(
       next => {
         this.nextStep();
     }));
+
     this.challengeId = this.route.snapshot.paramMap.get('id');
     challengeService.getChallengeForId(this.challengeId).subscribe(result => {
       this.challenge = plainToClass(Challenge , result);
-      this.NUMBER_STEPS = this.challenge.numberSteps;
+      if(this.challenge.fixedSteps) {
+        this.NUMBER_STEPS = this.challenge.numberSteps;
+      } else {
+        this.NUMBER_STEPS = this.wordService.getMaxLength();
+      }
       this.selectedOrderWords = plainToClass(WordTypeChallenge, this.challenge.wordsTypeChallenge);
     });
     this.optionLevels = levelService.getLevels();
@@ -84,6 +92,7 @@ export class ChallengeComponent implements OnInit, OnDestroy {
     } else {
       this.challengeState = CHALLENGE_STATE.CHECKED;
     }
+    this.wordService.restartWords();
     this.isCorrectAnswer = true;
     this.actualStep = 0;
     this.score = 0;

@@ -36,6 +36,7 @@
     "howler": "^2.0.5",
     "ng-block-ui": "^1.0.0-beta.16",
     "rxjs": "^5.5.2",
+    "speak-tts": "^1.1.0",
     "typescript": "~2.4.2",
     "zone.js": "^0.8.14"
   },

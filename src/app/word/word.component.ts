@@ -8,6 +8,7 @@ import { Input } from '@angular/core';
 import { WordPaletteService } from './../word-palette/word-palette.service';
 import { Howl } from 'howler';
 import { ChallengeService } from './../challenge/challenge.service';
+import Speech from 'speak-tts'
 
 
 @Component({
@@ -46,6 +47,18 @@ export class WordComponent implements OnInit,OnDestroy {
   constructor(private wordService: WordService, private wordPaletteService: WordPaletteService,
   private challengeService: ChallengeService) {
 
+    Speech.init({
+        'onVoicesLoaded': (data) => {console.log('voices', data.voices)},
+        'lang': 'en-US', // specify en-US language (no detection applied)
+        'volume': 0.5,
+        'rate': 0.8,
+        'pitch': 0.8
+    });
+
+    if(Speech.browserSupport()) {
+        console.log("speech synthesis supported")
+    }
+
     this.subscription.add(wordPaletteService.changeWord$.subscribe(
       change => {
         this.changeWord();
@@ -57,8 +70,10 @@ export class WordComponent implements OnInit,OnDestroy {
 
   changeWord() {
      const word = this.wordService.getWord(this.word.type, this.level);
+     
      if (word) {
        this.selectedWord = word;
+       this.playWordSound(this.selectedWord.word);
      }
      this.digitWord = '';
      this.wordState = WORD_STATE.UNCHECK;
@@ -66,12 +81,10 @@ export class WordComponent implements OnInit,OnDestroy {
   }
 
   playWordSound(word) {
-    this.sound = new Howl({
-      src: ['http://howjsay.com/mp3/' + word + '.mp3'],
-      html5 : true
+    Speech.speak({
+        text: word,
+        onError: (e) => {console.log('sorry an error occurred.', e)} // optionnal error callback
     });
-
-    this.sound.play();
   }
 
   checkWord() {

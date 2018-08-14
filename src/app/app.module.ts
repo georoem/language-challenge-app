@@ -69,7 +69,8 @@ import { LevelService } from './util/level.service';
     MatToolbarModule,
     MatTooltipModule,
     NgbModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [WordService,
     WordPaletteService,

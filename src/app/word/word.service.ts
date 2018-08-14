@@ -19,13 +19,16 @@ export class WordService {
     nouns: Word[];
     verbTimes: Word[];
     newWords: Word[];
+    wordTypes: WordTypeChallenge[]
     urlService = '';
+    maxLength = 0;
 
     constructor(private http: HttpClient, private blockUIService: BlockUIService) {
         this.urlService = environment.apiUrl;
     }
 
     public initWordTypes(wordTypes: WordTypeChallenge[]) {
+        this.wordTypes = wordTypes; 
         if(wordTypes) {
             wordTypes.forEach(element => {
                 this.appBlockUI.start('Cargando..');
@@ -37,6 +40,9 @@ export class WordService {
                                 this.words[element.type] = plainToClass(Word, data);
                                 this.words[element.type].random = element.random;
                                 this.words[element.type].lastWordIndex = 0;
+                                if(this.words[element.type].length>this.maxLength) {
+                                    this.maxLength = this.words[element.type].length;
+                                }
                                 this.appBlockUI.stop();
                             });
                         }
@@ -58,11 +64,11 @@ export class WordService {
 
     checkWordCallback$ = this.checkWordCallbackSource.asObservable();
 
-    checkwordCallback(check: boolean) {
+    public checkwordCallback(check: boolean) {
         this.checkWordCallbackSource.next(check);
     }
 
-    getWord(type: string, level: string): Word {
+    public getWord(type: string, level: string): Word {
         let words = this.getWords(type, level);
         let random = this.words[type].random;
         let word: Word;
@@ -75,6 +81,10 @@ export class WordService {
         return word;
     }
 
+    public getMaxLength() {
+        return this.maxLength;
+    }
+
     public getWords(type, level) {
         if (level) {
             const list = this.getWordsFilterByParam(this.words[type], 'level', level);
@@ -82,6 +92,12 @@ export class WordService {
         } else {
             return this.words[type];
         }
+    }
+
+    public restartWords() {
+        this.wordTypes.forEach(element => {
+            this.words[element.type].lastWordIndex = 0;
+        });
     }
 
     private getWordsFilterByParam(list, paramName, paramValue: string) {
