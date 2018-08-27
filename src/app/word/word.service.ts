@@ -19,7 +19,7 @@ export class WordService {
     nouns: Word[];
     verbTimes: Word[];
     newWords: Word[];
-    wordTypes: WordTypeChallenge[]
+    wordTypes: WordTypeChallenge[];
     urlService = '';
     maxLength = 0;
 
@@ -28,19 +28,20 @@ export class WordService {
     }
 
     public initWordTypes(wordTypes: WordTypeChallenge[]) {
-        this.wordTypes = wordTypes; 
-        if(wordTypes) {
+        this.wordTypes = wordTypes;
+        if (wordTypes) {
             wordTypes.forEach(element => {
                 this.appBlockUI.start('Cargando..');
-                if(element.type == 'talk') {
-                    this.http.get<string[]>(this.urlService + 'words/distinct/_wordGroupId/'+element.type).subscribe(data => {
-                        if(data) {
-                            let randomGroup = data[Math.floor(Math.random() * data.length)];
-                            this.http.get<Word[]>(this.urlService + 'words/wordTypeGroup/'+element.type+'/'+randomGroup).subscribe(data => {
+                if (element.type === 'talk') {
+                    this.http.get<string[]>(this.urlService + 'words/distinct/_wordGroupId/' + element.type).subscribe(data => {
+                        if (data) {
+                            const randomGroup = data[Math.floor(Math.random() * data.length)];
+                            this.http.get<Word[]>(this.urlService + 'words/wordTypeGroup/' +
+                                element.type + '/' + randomGroup).subscribe( data => {
                                 this.words[element.type] = plainToClass(Word, data);
                                 this.words[element.type].random = element.random;
                                 this.words[element.type].lastWordIndex = 0;
-                                if(this.words[element.type].length>this.maxLength) {
+                                if(this.words[element.type].length > this.maxLength) {
                                     this.maxLength = this.words[element.type].length;
                                 }
                                 this.appBlockUI.stop();
@@ -49,7 +50,7 @@ export class WordService {
                         this.appBlockUI.stop();
                     });
                 } else {
-                    this.http.get<Word[]>(this.urlService + 'words/wordType/'+element.type).subscribe(data => {
+                    this.http.get<Word[]>(this.urlService + 'words/wordType/' + element.type).subscribe(data => {
                         this.words[element.type] = plainToClass(Word, data);
                         this.words[element.type].random = element.random;
                         this.words[element.type].lastWordIndex = 0;
@@ -69,10 +70,10 @@ export class WordService {
     }
 
     public getWord(type: string, level: string): Word {
-        let words = this.getWords(type, level);
-        let random = this.words[type].random;
+        const words = this.getWords(type, level);
+        const random = this.words[type].random;
         let word: Word;
-        if(random) {
+        if (random) {
             word = words[Math.floor(Math.random() * words.length)];
         } else {
             word = words[this.words[type].lastWordIndex];
@@ -95,9 +96,11 @@ export class WordService {
     }
 
     public restartWords() {
-        this.wordTypes.forEach(element => {
-            this.words[element.type].lastWordIndex = 0;
-        });
+        if (this.wordTypes) {
+            this.wordTypes.forEach(element => {
+                this.words[element.type].lastWordIndex = 0;
+            });
+        }
     }
 
     private getWordsFilterByParam(list, paramName, paramValue: string) {
