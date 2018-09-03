@@ -1,7 +1,8 @@
 export class Challenge {
 
     public constructor(private _id?: string, private _type?: string, private _typeTitle?: string , private _description?: string,
-                        private _color?: string, private _icon?: string, private _fixedSteps?: boolean, private _numberSteps?: number, private _wordsTypeChallenge?: WordTypeChallenge[]) {}
+                        private _color?: string, private _icon?: string, private _fixedSteps?: boolean, private _numberSteps?: number,
+                        private _wordsTypeChallenge?: WordTypeChallenge[]) {}
 
     get id() {
         return this._id;

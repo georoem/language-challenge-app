@@ -13,7 +13,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 import { LevelService } from '../util/level.service';
-import {plainToClass} from 'class-transformer';
+import { plainToClass } from 'class-transformer';
 import { ScoreService } from './../score/score.service';
 import { WordService } from './../word/word.service';
 
@@ -30,7 +30,7 @@ export class ChallengeComponent implements OnInit, OnDestroy {
   user = '';
   score = 0;
   scoreFormatted = '';
-  challengeState= CHALLENGE_STATE.UNSTARTED;
+  challengeState = CHALLENGE_STATE.UNSTARTED;
   CHALLENGE_STATE = CHALLENGE_STATE;
   actualStep: number;
   stepResults = [];
@@ -51,29 +51,29 @@ export class ChallengeComponent implements OnInit, OnDestroy {
     private scoreService: ScoreService, private route: ActivatedRoute, private location: Location,
     private router: Router, private challengeService: ChallengeService, private levelService: LevelService,
     private wordService: WordService) {
-    
+
     this.subscription.add(chronometerService.chronometerCallback$.subscribe(
       timestamp => {
         this.score += +timestamp;
         this.scoreFormatted = this.score / 1000 + ' Seconds';
-        this.saveStepResult({step: this.actualStep, stepTime: timestamp, isCorrectAnswer: this.isCorrectAnswer});
-    }));
-    
+        this.saveStepResult({ step: this.actualStep, stepTime: timestamp, isCorrectAnswer: this.isCorrectAnswer });
+      }));
+
     this.subscription.add(wordService.checkWordCallback$.subscribe(
       isValid => {
         this.isCorrectAnswer = isValid;
         this.prepareNextStep();
-    }));
-    
+      }));
+
     this.subscription.add(challengeService.nextStep$.subscribe(
       next => {
         this.nextStep();
-    }));
+      }));
 
     this.challengeId = this.route.snapshot.paramMap.get('id');
     challengeService.getChallengeForId(this.challengeId).subscribe(result => {
-      this.challenge = plainToClass(Challenge , result);
-      if(this.challenge.fixedSteps) {
+      this.challenge = plainToClass(Challenge, result);
+      if (this.challenge.fixedSteps) {
         this.NUMBER_STEPS = this.challenge.numberSteps;
       } else {
         this.NUMBER_STEPS = this.wordService.getMaxLength();

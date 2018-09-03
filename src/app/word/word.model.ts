@@ -1,6 +1,7 @@
 export class Word {
 
-    constructor (public _word: string, public _wordTranslate: string, public _wordType: string, public _level: string, public _wordGroupId?: number) {}
+    constructor (public _word: string, public _wordTranslate: string, public _wordType: string, public _level: string,
+        public _wordGroupId?: number) {}
 
     set word(word: string) {
         this._word = word;

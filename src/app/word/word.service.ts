@@ -22,6 +22,8 @@ export class WordService {
     wordTypes: WordTypeChallenge[];
     urlService = '';
     maxLength = 0;
+    checkWordCallbackSource = new Subject<boolean>();
+    checkWordCallback$ = this.checkWordCallbackSource.asObservable();
 
     constructor(private http: HttpClient, private blockUIService: BlockUIService) {
         this.urlService = environment.apiUrl;
@@ -37,11 +39,11 @@ export class WordService {
                         if (data) {
                             const randomGroup = data[Math.floor(Math.random() * data.length)];
                             this.http.get<Word[]>(this.urlService + 'words/wordTypeGroup/' +
-                                element.type + '/' + randomGroup).subscribe( data => {
-                                this.words[element.type] = plainToClass(Word, data);
+                                element.type + '/' + randomGroup).subscribe( word => {
+                                this.words[element.type] = plainToClass(Word, word);
                                 this.words[element.type].random = element.random;
                                 this.words[element.type].lastWordIndex = 0;
-                                if(this.words[element.type].length > this.maxLength) {
+                                if (this.words[element.type].length > this.maxLength) {
                                     this.maxLength = this.words[element.type].length;
                                 }
                                 this.appBlockUI.stop();
@@ -60,10 +62,6 @@ export class WordService {
             });
         }
     }
-
-    private checkWordCallbackSource = new Subject<boolean>();
-
-    checkWordCallback$ = this.checkWordCallbackSource.asObservable();
 
     public checkwordCallback(check: boolean) {
         this.checkWordCallbackSource.next(check);
