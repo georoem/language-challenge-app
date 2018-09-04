@@ -1,3 +1,4 @@
+import { AutofocusDirective } from './util/autofocus.directive';
 import { ScoreService } from './score/score.service';
 import { ChallengeService } from './challenge/challenge.service';
 import { ScoreComponent } from './score/score.component';
@@ -46,7 +47,8 @@ import { LevelService } from './util/level.service';
     WordComponent,
     SaveScoreDialogComponent,
     ScoreComponent,
-    DashboardComponent
+    DashboardComponent,
+    AutofocusDirective
   ],
   entryComponents: [ SaveScoreDialogComponent ],
   imports: [

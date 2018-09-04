@@ -16,12 +16,14 @@
         </mat-radio-group>
     </mat-card>
     <br>
-    <button mat-fab color="accent" *ngIf="challengeState == CHALLENGE_STATE.UNSTARTED" (keyup.enter)= "startChallenge()" (click) = "startChallenge()" title="Start">Start</button>
-    <button mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.CHECKED" (keyup.enter)= "nextStep()" (click) = "nextStep()" title="Next"><mat-icon aria-label="Next">navigate_next</mat-icon></button>
-    <button mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.TO_CHECK" (keyup.enter)= "checkStep()" (click) = "checkStep()" title="Check"><mat-icon aria-label="Check">spellcheck</mat-icon></button>
-    <button mat-fab color="warn" *ngIf="challengeState == CHALLENGE_STATE.TO_FINALIZE" (keyup.enter)= "nextStep()" (click) = "nextStep()" title="Finish">Finish</button>
-    <button mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.FINALIZED" (click) = "restartChallenge()" title="Challenge Again"><mat-icon aria-label="Challenge Again">restore</mat-icon></button>
-    <button mat-fab color="warn" *ngIf="challengeState == CHALLENGE_STATE.FINALIZED" (click) = "openSaveScore()" title="Save Score"><mat-icon aria-label="Save Score">save</mat-icon></button>
+    <button (keyup)="onKey($event)">Hey</button>
+    <p>{{values}}</p>
+    <button [autofocus] mat-fab color="accent" *ngIf="challengeState == CHALLENGE_STATE.UNSTARTED" (keyup.enter)= "startChallenge()" (keyup.MediaPlayPause)= "startChallenge()" (click) = "startChallenge()" title="Start">Start</button>
+    <button [autofocus] mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.CHECKED" (keyup.enter)= "nextStep()" (click) = "nextStep()" title="Next"><mat-icon aria-label="Next">navigate_next</mat-icon></button>
+    <button [autofocus] mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.TO_CHECK" (keyup.enter)= "checkStep()" (click) = "checkStep()" title="Check"><mat-icon aria-label="Check">spellcheck</mat-icon></button>
+    <button [autofocus] mat-fab color="warn" *ngIf="challengeState == CHALLENGE_STATE.TO_FINALIZE" (keyup.enter)= "nextStep()" (click) = "nextStep()" title="Finish">Finish</button>
+    <button [autofocus] mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.FINALIZED" (click) = "restartChallenge()" title="Challenge Again"><mat-icon aria-label="Challenge Again">restore</mat-icon></button>
+    <button  mat-fab color="warn" *ngIf="challengeState == CHALLENGE_STATE.FINALIZED" (click) = "openSaveScore()" title="Save Score"><mat-icon aria-label="Save Score">save</mat-icon></button>
     <br>
     <br>
     <div>

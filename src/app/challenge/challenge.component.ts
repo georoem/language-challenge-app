@@ -44,6 +44,8 @@ export class ChallengeComponent implements OnInit, OnDestroy {
   challenge = new Challenge();
   isCorrectAnswer = true;
   totalCorrectAnswers = 0;
+  values= '';
+
   private subscription: Subscription = new Subscription();
 
   constructor(public dialog: MatDialog, private chronometerService: ChronometerService,
@@ -84,6 +86,10 @@ export class ChallengeComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+  }
+
+  onKey(event:any) { // without type info
+    this.values += event.code + ' | ';
   }
 
   startChallenge() {
