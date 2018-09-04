@@ -16,8 +16,6 @@
         </mat-radio-group>
     </mat-card>
     <br>
-    <button (keyup)="onKey($event)">Hey</button>
-    <p>{{values}}</p>
     <button [autofocus] mat-fab color="accent" *ngIf="challengeState == CHALLENGE_STATE.UNSTARTED" (keyup.enter)= "startChallenge()" (keyup.MediaPlayPause)= "startChallenge()" (click) = "startChallenge()" title="Start">Start</button>
     <button [autofocus] mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.CHECKED" (keyup.enter)= "nextStep()" (click) = "nextStep()" title="Next"><mat-icon aria-label="Next">navigate_next</mat-icon></button>
     <button [autofocus] mat-fab color="primary" *ngIf="challengeState == CHALLENGE_STATE.TO_CHECK" (keyup.enter)= "checkStep()" (click) = "checkStep()" title="Check"><mat-icon aria-label="Check">spellcheck</mat-icon></button>
