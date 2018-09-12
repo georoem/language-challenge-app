@@ -1,0 +1,38 @@
+[
+    {
+        "_word": "What is Redux?",
+        "_wordTranslate": "online", 
+        "_wordType": "question",  
+        "_level": "technical"
+    },
+    {
+        "_word": "What kind of Angular applications can you use Redux",
+        "_wordTranslate": "online", 
+        "_wordType": "question",  
+        "_level": "technical"
+    },
+    {
+        "_word": "Why the data is unpredictable ins an angular app without an state management library implementation?",
+        "_wordTranslate": "online", 
+        "_wordType": "question",  
+        "_level": "technical"
+    },
+    {
+        "_word": "What is the main function of Redux?",
+        "_wordTranslate": "online", 
+        "_wordType": "question",  
+        "_level": "technical"
+    },
+    {
+        "_word": "List benefits of redux",
+        "_wordTranslate": "online", 
+        "_wordType": "question",  
+        "_level": "technical"
+    },
+    {
+        "_word": "When to use redux",
+        "_wordTranslate": "online", 
+        "_wordType": "question",  
+        "_level": "technical"
+    }
+]
