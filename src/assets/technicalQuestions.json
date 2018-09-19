@@ -34,5 +34,29 @@
         "_wordTranslate": "online", 
         "_wordType": "question",  
         "_level": "technical"
+    },
+    {
+        "_word": "What are the redux parts?",
+        "_wordTranslate": "online", 
+        "_wordType": "question",  
+        "_level": "technical"
+    },
+    {
+        "_word": "What are the reducers?",
+        "_wordTranslate": "online", 
+        "_wordType": "question",  
+        "_level": "technical"
+    },
+    {
+        "_word": "What is the pure functions?",
+        "_wordTranslate": "online", 
+        "_wordType": "question",  
+        "_level": "technical"
+    },
+    {
+        "_word": "What are the benefits to not change the state in reducers?",
+        "_wordTranslate": "online", 
+        "_wordType": "question",  
+        "_level": "technical"
     }
 ]

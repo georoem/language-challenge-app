@@ -101,8 +101,8 @@
 	"_description": "Answer the question",
 	"_color": "#ff9933",
 	"_icon": "sentiment_very_satisfied",
-	"_fixedSteps":false,
-	"_numberSteps":99,
+	"_fixedSteps":true,
+	"_numberSteps":10,
 	"_wordsTypeChallenge": [{
 		"_type": "question",
 		"_typeTitle": "Question Word",
