@@ -12,10 +12,11 @@
 <mat-card (mouseenter) ="onWord = true" (mouseleave) ="onWord = false">
     <mat-card-title><mat-icon>{{word.icon}}</mat-icon>{{word.typeTitle}}</mat-card-title>
     <mat-card-content [style.backgroundColor]="word.color" [style.color]="'white'">
-      <p>{{selectedWord.wordTranslate | lowercase }}</p>
+      <p>{{selectedWord.word | lowercase }}</p>
     </mat-card-content>
     <mat-card-content *ngIf="onWord" [style.backgroundColor]="'#78909C'" [style.color]="'white'">
-        <p>{{selectedWord.word | lowercase }}</p>
+        <p>{{selectedWord.wordTraslate | lowercase }}</p>
+        <p>{{selectedWord.wordHelp | lowercase }}</p>
         <a (click) = "playWordSound(selectedWord.word)"><mat-icon>volume_up</mat-icon></a>
     </mat-card-content>
 </mat-card>

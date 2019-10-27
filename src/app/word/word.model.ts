@@ -1,7 +1,7 @@
 export class Word {
 
     constructor (public _word: string, public _wordTranslate: string, public _wordType: string, public _level: string,
-        public _wordGroupId?: number) {}
+        public _wordHelp?: string, public _wordGroupId?: number) {}
 
     set word(word: string) {
         this._word = word;
@@ -41,5 +41,13 @@ export class Word {
 
     get wordGroupId() {
         return this._wordGroupId;
+    }
+
+    set wordHelp(wordHelp: string) {
+        this._wordHelp = wordHelp;
+    }
+
+    get wordHelp() {
+        return this._wordHelp;
     }
 }
